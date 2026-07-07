@@ -7,6 +7,7 @@
 1. [macOS + Codex 法律工作流依赖与环境安装教程](docs/macos-codex-legal-workflow-setup-ABL-20260707-V1.md)
 2. [Windows + Codex 法律工作流依赖与环境安装教程](docs/windows-codex-legal-workflow-setup-ABL-20260707-V1.md)
 3. [梯子使用全教程：macOS、Windows、Android、iOS](docs/proxy-clash-verge-full-guide-ABL-20260707-V1.md)
+4. [Claude App 与 Codex App 通过 CC Switch 接入国产大模型教程](docs/claude-codex-app-ccswitch-domestic-models-ABL-20260707-V1.md)
 
 ## 附加版本
 
@@ -17,4 +18,3 @@
 - 本仓库内容主要面向合法合规的法律工作流、Codex 环境配置、文档处理、OCR、PDF 验证和工具使用。
 - 涉及网络代理工具的教程仅说明客户端安装、订阅导入、模式选择、验证与排错，不提供节点购买、自建服务端或规避监管的方法。
 - 订阅链接、二维码、节点地址、日志和客户资料均可能含敏感信息，不应公开提交到仓库。
-
