@@ -136,7 +136,7 @@ API Key：从 Z.AI Coding Plan / API Keys 页面生成的 Key
 - 点击 + 添加供应商。
 - 优先选择 Zhipu GLM、Z.ai GLM 或类似预设。
 - 填入正确的 Coding Plan Key 或 API Key。
-- 保存并启用。
+- 保存并启用。打开路由！
 - 重启 Claude App。
 - 用一个简单代码任务测试，并查看 CC Switch 请求日志。
 
