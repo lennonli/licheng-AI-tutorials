@@ -8,12 +8,12 @@
 
 | 工具 | 用途 | macOS | Windows | 备注 |
 | --- | --- | --- | --- | --- |
-| Claude Desktop App | Claude 桌面端，含 Chat / Cowork / Code 等入口 | Claude 下载页 | Claude 下载页 | 下载页会自动提供 macOS、Windows x64、Windows arm64 版本。 |
-| Codex App | OpenAI Codex 桌面端 | Codex App 官方文档与下载页；Apple Silicon 直链：Codex.dmg；Intel 直链：Codex-latest-x64.dmg | Codex App 官方文档与下载页；Microsoft Store：Codex | 官方文档显示 Codex App 已支持 macOS 与 Windows。 |
-| CC Switch | 管理 Claude / Claude Desktop / Codex 等应用的供应商、模型、路由与用量 | 官网下载；GitHub Releases | 官网下载；GitHub Releases | 建议只从官网和 GitHub Releases 下载。 |
-| DeepSeek | DeepSeek API Key 与模型 | DeepSeek 平台；API Key 页面 | 同左 | 官方 OpenAI Base URL：https://api.deepseek.com；Anthropic Base URL：https://api.deepseek.com/anthropic。 |
-| 智谱 GLM Coding Plan（中国大陆站） | 智谱 Coding Plan 套餐 | GLM Coding Plan；快速开始；API Key | 同左 | 中国大陆站 Coding Plan：Anthropic 端点 https://open.bigmodel.cn/api/anthropic；OpenAI Chat 端点 https://open.bigmodel.cn/api/coding/paas/v4。 |
-| Z.AI / 智谱国际站 | Z.AI Coding Plan 与 API | Z.AI；Quick Start；API Keys | 同左 | 国际站端点：Anthropic https://api.z.ai/api/anthropic；OpenAI Chat https://api.z.ai/api/coding/paas/v4。 |
+| Claude Desktop App | Claude 桌面端，含 Chat / Cowork / Code 等入口 | [Claude 下载页](https://claude.com/download) | [Claude 下载页](https://claude.com/download) | 下载页会自动提供 macOS、Windows x64、Windows arm64 版本。 |
+| Codex App | OpenAI Codex 桌面端 | [Codex App 官方文档与下载页](https://developers.openai.com/codex/app)；Apple Silicon 直链：[Codex.dmg](https://persistent.oaistatic.com/codex-app-prod/Codex.dmg)；Intel 直链：[Codex-latest-x64.dmg](https://persistent.oaistatic.com/codex-app-prod/Codex-latest-x64.dmg) | [Codex App 官方文档与下载页](https://developers.openai.com/codex/app)；Microsoft Store：[Codex](https://apps.microsoft.com/detail/9plm9xgg6vks) | 官方文档显示 Codex App 已支持 macOS 与 Windows。 |
+| CC Switch | 管理 Claude / Claude Desktop / Codex 等应用的供应商、模型、路由与用量 | [官网下载](https://ccswitch.io)；[GitHub Releases](https://github.com/farion1231/cc-switch/releases/latest) | [官网下载](https://ccswitch.io)；[GitHub Releases](https://github.com/farion1231/cc-switch/releases/latest) | 建议只从官网和 GitHub Releases 下载。 |
+| DeepSeek | DeepSeek API Key 与模型 | [DeepSeek 平台](https://platform.deepseek.com/)；[API Key 页面](https://platform.deepseek.com/api_keys) | 同左 | 官方 OpenAI Base URL：https://api.deepseek.com；Anthropic Base URL：https://api.deepseek.com/anthropic。 |
+| 智谱 GLM Coding Plan（中国大陆站） | 智谱 Coding Plan 套餐 | [GLM Coding Plan](https://bigmodel.cn/glm-coding)；[快速开始](https://docs.bigmodel.cn/cn/coding-plan/quick-start)；[API Key](https://bigmodel.cn/usercenter/proj-mgmt/apikeys) | 同左 | 中国大陆站 Coding Plan：Anthropic 端点 https://open.bigmodel.cn/api/anthropic；OpenAI Chat 端点 https://open.bigmodel.cn/api/coding/paas/v4。 |
+| Z.AI / 智谱国际站 | Z.AI Coding Plan 与 API | [Z.AI](https://z.ai/)；[Quick Start](https://docs.z.ai/devpack/quick-start)；[API Keys](https://z.ai/manage-apikey/apikey-list) | 同左 | 国际站端点：Anthropic https://api.z.ai/api/anthropic；OpenAI Chat https://api.z.ai/api/coding/paas/v4。 |
 
 ## 2. 原理：为什么 Claude App 和 Codex App 的配置方式不一样
 
@@ -27,16 +27,16 @@ CC Switch v3.16.x 之后对一批具备原生 Responses 端点的国产模型供
 
 ### 3.1 macOS
 
-- 安装 Claude App：打开 Claude 下载页，下载 macOS 版本，拖入 Applications。
-- 安装 Codex App：打开 Codex App 官方下载页。Apple Silicon 机器选 Apple Silicon 版本，Intel Mac 选 Intel 版本。
-- 安装 CC Switch：打开 GitHub Releases，下载 CC-Switch-v版本号-macOS.dmg。如果安装后被 Gatekeeper 拦截，确认来源无误后右键打开。
-- 准备 API Key：DeepSeek 在 DeepSeek API Keys 创建；智谱在 Coding Plan 或 API Key 页面创建。团队版 Coding Plan 的 Key 可能与普通 API Key 不通用，应使用对应套餐页面生成的 Key。
+- 安装 Claude App：打开 [Claude 下载页](https://claude.com/download)，下载 macOS 版本，拖入 Applications。
+- 安装 Codex App：打开 [Codex App 官方下载页](https://developers.openai.com/codex/app)。Apple Silicon 机器选 Apple Silicon 版本，Intel Mac 选 Intel 版本。
+- 安装 CC Switch：打开 [GitHub Releases](https://github.com/farion1231/cc-switch/releases/latest)，下载 CC-Switch-v版本号-macOS.dmg。如果安装后被 Gatekeeper 拦截，确认来源无误后右键打开。
+- 准备 API Key：DeepSeek 在 [DeepSeek API Keys](https://platform.deepseek.com/api_keys) 创建；智谱在 Coding Plan 或 API Key 页面创建。团队版 Coding Plan 的 Key 可能与普通 API Key 不通用，应使用对应套餐页面生成的 Key。
 
 ### 3.2 Windows
 
-- 安装 Claude App：打开 Claude 下载页，按电脑架构选择 Windows x64 或 Windows arm64。
-- 安装 Codex App：打开 Codex App 官方下载页，或从 Microsoft Store 的 Codex 页面 安装。
-- 安装 CC Switch：打开 GitHub Releases，优先选择 CC-Switch-v版本号-Windows.msi；不想安装到系统可选 Portable zip。
+- 安装 Claude App：打开 [Claude 下载页](https://claude.com/download)，按电脑架构选择 Windows x64 或 Windows arm64。
+- 安装 Codex App：打开 [Codex App 官方下载页](https://developers.openai.com/codex/app)，或从 [Microsoft Store 的 Codex 页面](https://apps.microsoft.com/detail/9plm9xgg6vks) 安装。
+- 安装 CC Switch：打开 [GitHub Releases](https://github.com/farion1231/cc-switch/releases/latest)，优先选择 CC-Switch-v版本号-Windows.msi；不想安装到系统可选 Portable zip。
 - 准备 API Key：同 macOS。Windows 第一次启动本地路由时，如系统防火墙提示，允许 CC Switch 访问本机网络即可；这里主要是 127.0.0.1 本地转发。
 
 ## 4. CC Switch 基本界面
