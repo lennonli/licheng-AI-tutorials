@@ -8,10 +8,17 @@
 2. [Windows + Codex 法律工作流依赖与环境安装教程](docs/windows-codex-legal-workflow-setup-ABL-20260707-V1.md)
 3. [梯子使用全教程：macOS、Windows、Android、iOS](docs/proxy-clash-verge-full-guide-ABL-20260707-V1.md)
 4. [Claude App 与 Codex App 通过 CC Switch 接入国产大模型教程](docs/claude-codex-app-ccswitch-domestic-models-ABL-20260707-V1.md)
+5. [macOS Codex 跳过登录页面教程（使用第三方模型）](docs/macos-codex-skip-login-third-party-models-ABL-20260708-V1.md)
 
 ## 附加版本
 
 - [梯子使用全教程 HTML 自包含版](docs/proxy-clash-verge-full-guide-ABL-20260707-V2.html)
+
+## 更新记录
+
+| 日期 | 文件 | 更新内容 |
+| --- | --- | --- |
+| 2026-07-08 | [macOS Codex 跳过登录页面教程（使用第三方模型）](docs/macos-codex-skip-login-third-party-models-ABL-20260708-V1.md) | 新增使用第三方模型时跳过 Codex 登录页的 macOS 操作教程，包含配置原因、备份修改步骤、验证方式、常见排错和一键脚本。 |
 
 ## 说明
 
