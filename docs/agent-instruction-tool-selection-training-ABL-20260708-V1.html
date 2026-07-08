@@ -1,0 +1,854 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="面向律师团队的智能体指令体系、工具选择、权限控制和团队落地培训讲义翻页版。">
+  <title>智能体指令体系、工具选择培训讲义 | 李成律师法律AI工作站</title>
+  <style>
+:root{color-scheme:light;--ink:#14231b;--muted:#5d6c62;--line:rgba(20,35,27,.13);--paper:rgba(255,255,255,.88);--paper-strong:#fff;--lime:#9fe870;--lime-strong:#62d84e;--green:#0e6f3f;--green-soft:rgba(14,111,63,.12);--shadow:0 22px 70px rgba(20,35,27,.13);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}*{box-sizing:border-box}body{margin:0;overflow:hidden;color:var(--ink);background:radial-gradient(circle at 18% 0%,rgba(159,232,112,.28),transparent 28rem),linear-gradient(180deg,#fbfdf8 0%,#eef5ea 100%)}a{color:inherit}.deck-shell{position:relative;width:100vw;height:100vh;padding:22px}.deck-stage{position:relative;width:100%;height:100%}.slide{position:absolute;inset:0;display:none}.slide.active{display:block;animation:enter 220ms ease both}@keyframes enter{from{opacity:0;transform:translateX(18px) scale(.992)}to{opacity:1;transform:none}}.slide-inner{position:relative;display:grid;grid-template-rows:auto minmax(0,1fr) auto;width:min(1280px,calc(100vw - 44px));aspect-ratio:16/9;max-height:calc(100vh - 44px);margin:0 auto;padding:clamp(28px,3.5vw,54px);overflow:hidden;background:linear-gradient(145deg,rgba(255,255,255,.94),rgba(255,255,255,.76) 58%,rgba(223,247,208,.72)),var(--paper-strong);border:1px solid var(--line);border-radius:28px;box-shadow:var(--shadow)}.slide-head{display:grid;gap:10px;margin-bottom:18px}.kicker{margin:0;color:var(--green);font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:12px;font-weight:850;letter-spacing:.08em;text-transform:uppercase}.slide h1,.slide h2,.slide h3,.slide p{letter-spacing:0}.slide h2{max-width:1080px;margin:0;color:var(--ink);font-size:clamp(28px,4vw,48px);line-height:1.15;font-weight:850}.slide h3{margin:16px 0 8px;color:var(--green);font-size:clamp(18px,2vw,26px);line-height:1.32}.slide-body{min-height:0;overflow:hidden}.slide-body p{margin:0 0 14px;color:var(--ink);font-size:clamp(17px,1.7vw,24px);line-height:1.72}.slide-body p:last-child{margin-bottom:0}.slide-foot{display:flex;justify-content:space-between;gap:16px;padding-top:18px;color:var(--muted);font-size:12px;font-weight:760;border-top:1px solid var(--line)}.cover-grid{display:grid;grid-template-columns:minmax(0,1fr) 290px;gap:42px;align-items:end;height:100%}.cover-slide .slide-head{display:none}.cover-slide .slide-body{height:100%}.deck-tag,.eyebrow{display:inline-flex;margin:0 0 18px!important;padding:7px 12px;color:#14231b!important;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:12px!important;font-weight:850;text-transform:uppercase;background:var(--lime);border-radius:999px}.cover-slide h1{max-width:820px;margin:0;font-size:clamp(44px,7vw,76px);line-height:1.08}.cover-subtitle{margin-top:22px!important;color:var(--muted)!important;font-size:clamp(20px,2vw,28px)!important}.cover-card{display:grid;gap:8px;padding:24px;background:rgba(255,255,255,.7);border:1px solid var(--line);border-radius:22px}.cover-card span{color:var(--muted);font-size:13px;font-weight:800}.cover-card strong{margin-bottom:8px;color:var(--ink);font-size:22px}.toc-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:0;padding:0;list-style:none}.toc-list li{display:grid;grid-template-columns:52px minmax(0,1fr);gap:12px;align-items:center;min-height:70px;padding:14px;color:var(--ink);font-size:clamp(16px,1.55vw,22px);font-weight:800;line-height:1.38;background:rgba(255,255,255,.68);border:1px solid var(--line);border-radius:18px}.toc-list span{display:inline-grid;place-items:center;width:42px;height:42px;color:#14231b;background:var(--lime);border-radius:999px}.principle-grid,.closing-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.principle-grid article,.closing-grid article{min-height:170px;padding:22px;background:rgba(255,255,255,.72);border:1px solid var(--line);border-radius:22px}.principle-grid span{display:inline-grid;place-items:center;width:42px;height:42px;margin-bottom:18px;color:#14231b;font-weight:900;background:var(--lime);border-radius:999px}.principle-grid strong,.closing-grid strong{display:block;margin-bottom:8px;font-size:clamp(21px,2vw,30px);line-height:1.25}.principle-grid p,.closing-grid span{color:var(--muted);font-size:clamp(16px,1.35vw,20px);line-height:1.7}.chapter-slide .slide-inner{background:linear-gradient(145deg,var(--ink),#1f392b 55%,#315640);color:#fff}.chapter-slide h2,.chapter-slide .kicker,.chapter-slide .slide-foot{color:#fff;border-color:rgba(255,255,255,.16)}.chapter-layout{display:grid;grid-template-columns:220px minmax(0,1fr);gap:34px;align-items:start}.chapter-mark{display:grid;place-items:center;width:170px;height:170px;color:#14231b;font-size:24px;font-weight:900;background:var(--lime);border-radius:50%}.chapter-layout ul{display:grid;gap:12px;margin:0;padding:0;list-style:none}.chapter-layout li{padding:13px 16px;color:rgba(255,255,255,.9);font-size:clamp(16px,1.45vw,22px);line-height:1.42;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:16px}.slide-list{display:grid;gap:10px;margin:0 0 14px;padding:0;list-style:none}.slide-list li,.numbered-point{position:relative;padding:14px 16px 14px 46px;background:rgba(255,255,255,.62);border:1px solid var(--line);border-radius:18px}.slide-list li::before,.numbered-point::before{content:"";position:absolute;left:18px;top:24px;width:10px;height:10px;background:var(--lime-strong);border-radius:50%}.callout{padding:18px 20px;color:var(--ink)!important;font-weight:820;background:var(--green-soft);border:1px solid rgba(14,111,63,.18);border-radius:20px}.table-caption{margin:0 0 12px!important;color:var(--green)!important;font-size:clamp(16px,1.3vw,20px)!important;font-weight:850}.table-wrap{max-height:100%;overflow:hidden;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.72)}.data-table{width:100%;border-collapse:collapse;font-size:clamp(13px,1vw,16px);line-height:1.48}.data-table.dense{font-size:clamp(11px,.86vw,14px);line-height:1.35}.data-table th,.data-table td{padding:10px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line);border-right:1px solid var(--line)}.data-table th:last-child,.data-table td:last-child{border-right:0}.data-table tr:last-child td{border-bottom:0}.data-table th{color:var(--ink);font-weight:900;background:rgba(159,232,112,.34)}.data-table td{color:#213228}.table-slide .slide-body{display:grid;grid-template-rows:auto minmax(0,1fr)}.deck-nav{position:fixed;left:50%;bottom:18px;z-index:20;display:flex;gap:10px;align-items:center;padding:9px;background:rgba(255,255,255,.78);border:1px solid var(--line);border-radius:999px;box-shadow:0 12px 34px rgba(20,35,27,.12);transform:translateX(-50%);backdrop-filter:blur(12px)}.deck-nav button,.top-links a,.top-links button{min-width:42px;min-height:42px;padding:0 14px;color:var(--ink);font-weight:850;background:var(--paper-strong);border:1px solid var(--line);border-radius:999px;text-decoration:none}.deck-nav button:hover,.top-links a:hover,.top-links button:hover{background:var(--lime)}.counter{min-width:84px;color:var(--muted);font-size:13px;font-weight:850;text-align:center}.progress{position:fixed;left:0;right:0;top:0;z-index:30;height:4px;background:rgba(20,35,27,.08)}.progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--lime),var(--green));transition:width 180ms ease}.top-links{position:fixed;top:18px;right:22px;z-index:21;display:flex;gap:8px;align-items:center}.top-links a,.top-links button{display:inline-flex;align-items:center;min-height:38px;font-size:13px}.overview-panel{position:fixed;inset:20px;z-index:40;display:none;overflow:auto;padding:22px;background:rgba(247,251,243,.94);border:1px solid var(--line);border-radius:26px;box-shadow:var(--shadow);backdrop-filter:blur(14px)}.overview-panel.open{display:block}.overview-panel h2{margin:0 0 16px;font-size:28px}.overview-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}.overview-grid button{display:grid;grid-template-columns:40px minmax(0,1fr);gap:10px;align-items:center;min-height:68px;padding:12px;color:var(--ink);text-align:left;background:#fff;border:1px solid var(--line);border-radius:16px}.overview-grid button:hover{border-color:rgba(14,111,63,.28);box-shadow:0 8px 24px rgba(20,35,27,.08)}.overview-grid span{display:grid;place-items:center;width:34px;height:34px;color:#14231b;font-weight:900;background:var(--lime);border-radius:999px}.help{position:fixed;left:22px;bottom:24px;z-index:19;color:var(--muted);font-size:12px;font-weight:760}@media (max-aspect-ratio:14/10){body{overflow:auto}.deck-shell{min-height:100vh;height:auto;padding:16px}.slide-inner{width:100%;min-height:calc(100vh - 32px);aspect-ratio:auto;max-height:none}}@media (max-width:760px){.cover-grid,.chapter-layout,.principle-grid,.closing-grid,.toc-list{grid-template-columns:1fr}.cover-card{display:none}.top-links{left:16px;right:16px;justify-content:flex-end}.top-links a.github-link{display:none}.help{display:none}.deck-nav{width:calc(100% - 32px);justify-content:center}.slide-body p{font-size:17px}.data-table,.data-table.dense{font-size:12px}}@media print{body{overflow:visible;background:#fff}.deck-shell{height:auto;padding:0}.slide{position:relative;display:block!important;page-break-after:always}.slide-inner{width:100%;max-height:none;aspect-ratio:16/9;box-shadow:none;border-radius:0}.deck-nav,.top-links,.progress,.overview-panel,.help{display:none!important}}
+</style>
+</head>
+<body>
+  <div class="progress" id="progress"><span></span></div>
+  <nav class="top-links" aria-label="页面链接">
+    <a href="/tutorials/">返回教程列表</a>
+    <a class="github-link" href="https://github.com/lennonli/licheng-AI-tutorials/blob/main/docs/agent-instruction-tool-selection-training-ABL-20260708-V1.html" target="_blank" rel="noreferrer">GitHub 源文件</a>
+    <button id="overview-toggle" type="button">概览</button>
+    <button id="fullscreen" type="button">全屏</button>
+  </nav>
+  <main class="deck-shell" aria-label="智能体指令体系、工具选择培训讲义">
+    <div class="deck-stage">
+<section class="slide cover-slide" data-index="1" aria-label="第 1 页：智能体指令体系、工具选择培训讲义">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">内部培训材料</p>
+      <h2>智能体指令体系、工具选择培训讲义</h2>
+    </header>
+    <div class="slide-body">
+  <div class="cover-grid">
+    <div>
+      <p class="deck-tag">Legal AI Training</p>
+      <h1>智能体指令体系、工具选择培训讲义</h1>
+      <p class="cover-subtitle">内部培训材料</p>
+    </div>
+    <div class="cover-card">
+      <span>版本</span><strong>2026年6月28日</strong>
+      <span>讲义</span><strong>李成</strong>
+      <span>模式</span><strong>HTML 翻页版</strong>
+    </div>
+  </div>
+</div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>01 / 79</span></footer>
+  </div>
+</section>
+<section class="slide toc-slide" data-index="2" aria-label="第 2 页：目录">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">课程结构</p>
+      <h2>目录</h2>
+    </header>
+    <div class="slide-body"><ol class="toc-list"><li><span>01</span>第一章 基础概念：大模型、Agent 与主流工具形态</li><li><span>02</span>第二章 总体框架：律师如何理解 Agent 工具体系</li><li><span>03</span>第三章 智能体指令体系与对话管理：全局指令、项目指令、对话提示词与模型选择</li><li><span>04</span>第四章 Codex 工具：Goal、Chrome、Computer Use、手机版与 Record &amp; Replay</li><li><span>05</span>第五章 Skill、MCP/Connector 与 Plugin 的适用边界</li><li><span>06</span>第六章 客户秘密保护：控制上传、脱敏、隐私模式与定期清理</li><li><span>07</span>第七章 团队落地与进阶操作：Codex 与普通 ChatGPT 文档处理的区别及 /plan、/goal 切换</li></ol></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>02 / 79</span></footer>
+  </div>
+</section>
+<section class="slide frame-slide" data-index="3" aria-label="第 3 页：律师团队使用 Agent 的四个控制面">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">总览</p>
+      <h2>律师团队使用 Agent 的四个控制面</h2>
+    </header>
+    <div class="slide-body">
+<div class="principle-grid">
+  <article><span>01</span><strong>区分模型与 Agent</strong><p>先判断是问答生成，还是带工具、权限和执行循环的工作系统。</p></article>
+  <article><span>02</span><strong>分层管理指令</strong><p>全局指令管长期规则，项目指令管业务流程，对话提示词管本次交付。</p></article>
+  <article><span>03</span><strong>按任务选择工具</strong><p>ChatGPT、Claude、Codex、Chrome、Computer Use、Skill 与 MCP 各有边界。</p></article>
+  <article><span>04</span><strong>客户秘密优先</strong><p>把上传、连接、执行、记忆、清理和人工确认作为团队 AI 管理重点。</p></article>
+</div>
+</div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>03 / 79</span></footer>
+  </div>
+</section>
+<section class="slide chapter-slide" data-index="4" aria-label="第 4 页：第一章 基础概念：大模型、Agent 与主流工具形态">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">章节</p>
+      <h2>第一章 基础概念：大模型、Agent 与主流工具形态</h2>
+    </header>
+    <div class="slide-body"><div class="chapter-layout"><div class="chapter-mark">Chapter</div><ul><li>一、大模型是什么：先理解“能力底座”</li><li>二、同一个大模型为什么会有不同版本</li><li>三、推理模型与非推理模型的区别</li><li>四、文本大模型与多模态大模型的区别</li><li>五、目前常见的境外和境内大模型</li><li>六、大模型的主要使用方式：网页、CLI 与 App</li><li>七、主流境外与境内 Agent 工具示例</li><li>八、OpenClaw 与上述 Agent 的区别，以及律师为什么通常用不上</li></ul></div></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>04 / 79</span></footer>
+  </div>
+</section>
+<section class="slide content-slide" data-index="5" aria-label="第 5 页：第一章 基础概念：大模型、Agent 与主流工具形态">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">第一章 基础概念：大模型、Agent 与主流工具形态</p>
+      <h2>第一章 基础概念：大模型、Agent 与主流工具形态</h2>
+    </header>
+    <div class="slide-body"><p>律师使用 AI 工具前，应先建立三个基础判断：第一，当前使用的是“大模型本身”还是“带工具和权限的 Agent”；第二，当前模型属于哪一类能力档位；第三，当前入口是网页、CLI、桌面 App、移动端 App，还是连接了浏览器、本地文件、终端或外部系统的执行环境。不同判断会直接影响材料能否上传、任务能否交给模型、输出是否需要拆阶段复核。</p><p>本章只建立基础认知，不讨论具体提示词。后续章节中的全局指令、项目指令、Skill、MCP/Connector、Codex Goal、Computer Use 等内容，都建立在本章的区分之上。</p></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>05 / 79</span></footer>
+  </div>
+</section>
+<section class="slide content-slide" data-index="6" aria-label="第 6 页：一、大模型是什么：先理解“能力底座”">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">第一章 基础概念：大模型、Agent 与主流工具形态</p>
+      <h2>一、大模型是什么：先理解“能力底座”</h2>
+    </header>
+    <div class="slide-body"><p>大模型可以理解为以海量数据训练形成的通用能力底座，核心能力包括语言理解、文本生成、总结归纳、逻辑推理、翻译、代码生成、图像理解、语音识别、工具调用等。律师日常接触到的 ChatGPT、Claude、Gemini、Kimi、DeepSeek、通义千问、智谱 GLM 等，底层均是不同厂商的大模型或大模型系统。</p><p>对律师而言，不必掌握训练算法细节，但必须知道：模型不是法律数据库，不等于检索工具，也不是已经核验过的法律意见。它的强项是“理解、归纳、生成、转换和辅助推理”；它的弱项是“权威性、时效性、来源可追溯性和客户秘密控制”。</p></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>06 / 79</span></footer>
+  </div>
+</section>
+<section class="slide table-slide" data-index="7" aria-label="第 7 页：表1-1：大模型的常见分类维度">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">一、大模型是什么：先理解“能力底座”</p>
+      <h2>表1-1：大模型的常见分类维度</h2>
+    </header>
+    <div class="slide-body"><p class="table-caption">表1-1：大模型的常见分类维度</p><div class="table-wrap"><table class="data-table dense"><thead><tr><th>分类维度</th><th>常见类型</th><th>对律师工作的影响</th></tr></thead><tbody><tr><td>按能力档位</td><td>旗舰/高阶模型、中阶模型、轻量/快速模型</td><td>旗舰模型适合复杂分析和复核；轻量模型适合摘要、分类、格式整理等低风险任务。</td></tr><tr><td>按是否推理</td><td>推理模型、非推理/快速模型</td><td>推理模型更适合多步骤法律分析、复杂交易结构、证据链梳理；快速模型更适合明确、重复、低复杂度任务。</td></tr><tr><td>按输入模态</td><td>文本模型、多模态模型</td><td>文本模型处理可复制文字；多模态模型可读图像、扫描件、表格截图、PPT 页面，但识别结果仍需人工核验。</td></tr><tr><td>按开放程度</td><td>闭源商业模型、开源/开权重模型、本地部署模型</td><td>闭源模型体验成熟但需关注数据合规；本地部署更可控但需要技术维护和成本投入。</td></tr><tr><td>按上下文长度</td><td>普通上下文、长上下文、超长上下文</td><td>长上下文适合阅读底稿包、长合同、报告和多轮项目材料，但不能替代来源索引和人工复核。</td></tr><tr><td>按工具能力</td><td>纯聊天模型、可联网模型、可调用工具/函数的模型</td><td>工具能力越强，权限和保密风险越高；法律工作应默认最小权限。</td></tr></tbody></table></div></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>07 / 79</span></footer>
+  </div>
+</section>
+<section class="slide content-slide" data-index="8" aria-label="第 8 页：二、同一个大模型为什么会有不同版本">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">第一章 基础概念：大模型、Agent 与主流工具形态</p>
+      <h2>二、同一个大模型为什么会有不同版本</h2>
+    </header>
+    <div class="slide-body"><p>同一家厂商通常会提供多个版本。版本差异不只是“新旧”，还包括能力、速度、价格、上下文长度、是否支持推理、是否支持多模态、是否支持工具调用、是否面向代码/Agent 优化等。律师选择模型时，应把“任务复杂度”和“模型档位”匹配，而不是默认所有问题都使用最高档模型。</p><p>常见版本差异包括：旗舰模型负责复杂任务，中阶模型负责日常文本工作，轻量模型负责高频低风险任务；推理版本用于需要逐步分析的问题，快速版本用于摘要和改写；多模态版本用于图像、扫描件、PPT、网页截图，纯文本版本用于可复制文本；Codex、Claude Code、Antigravity 等 Agent 通常还会选用更适合工具调用、文件编辑和长链路执行的模型。</p></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>08 / 79</span></footer>
+  </div>
+</section>
+<section class="slide table-slide" data-index="9" aria-label="第 9 页：表1-2：模型版本对法律工作的影响">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">二、同一个大模型为什么会有不同版本</p>
+      <h2>表1-2：模型版本对法律工作的影响</h2>
+    </header>
+    <div class="slide-body"><p class="table-caption">表1-2：模型版本对法律工作的影响</p><div class="table-wrap"><table class="data-table dense"><thead><tr><th>模型版本/能力</th><th>适合任务</th><th>不宜任务</th></tr></thead><tbody><tr><td>高阶推理模型</td><td>复杂合同结构、诉讼争点推演、尽调重大风险归纳、监管问询回复复核</td><td>大批量低价值格式清理，成本过高。</td></tr><tr><td>中阶通用模型</td><td>合同审阅初稿、法律备忘录初稿、会议纪要整理、邮件和文书润色</td><td>极复杂法律结论、需要权威检索的最终意见。</td></tr><tr><td>轻量/快速模型</td><td>文件分类、摘要、提取日期金额主体、表格字段填充、格式转换</td><td>需要严密推理、复杂事实冲突判断的任务。</td></tr><tr><td>多模态模型</td><td>识别扫描合同、图片证据、PPT 页面、图表、网页截图</td><td>把图片识别结果直接当作最终事实。</td></tr><tr><td>代码/Agent 优化模型</td><td>批量文件处理、脚本生成、目录整理、自动化工作流、网页或桌面操作</td><td>无需工具权限的简单文本问答。</td></tr></tbody></table></div></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>09 / 79</span></footer>
+  </div>
+</section>
+<section class="slide content-slide" data-index="10" aria-label="第 10 页：三、推理模型与非推理模型的区别">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">第一章 基础概念：大模型、Agent 与主流工具形态</p>
+      <h2>三、推理模型与非推理模型的区别</h2>
+    </header>
+    <div class="slide-body"><p>推理模型会在生成答案前投入更多计算，对复杂问题进行分解、比较、计划和自检。它通常更适合多步骤、强逻辑、强约束的任务，例如股权投资尽调风险归纳、复杂合同责任分配、证据链分析、争议焦点拆解、法律备忘录论证结构。</p><p>非推理或快速模型更强调速度和成本，适合边界清楚、答案结构明确的任务，例如提取合同主体、整理会议纪要、摘要一封邮件、改写一段文字、生成清单字段。使用快速模型处理复杂法律判断，容易出现看似流畅但缺乏严密推理的结果；使用高阶推理模型做简单整理，则可能浪费额度和时间。</p><p>律师实务可以采用“先轻后重”的策略：先用快速模型做材料索引和初步提取，再用中高阶模型做风险归纳和论证，最后由律师复核关键结论。</p></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>10 / 79</span></footer>
+  </div>
+</section>
+<section class="slide content-slide" data-index="11" aria-label="第 11 页：四、文本大模型与多模态大模型的区别">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">第一章 基础概念：大模型、Agent 与主流工具形态</p>
+      <h2>四、文本大模型与多模态大模型的区别</h2>
+    </header>
+    <div class="slide-body"><p>文本大模型主要处理可复制、可检索的文字内容，例如合同正文、邮件、访谈纪要、法规文本、报告草稿。多模态大模型可以处理图片、扫描件、PDF 页面、PPT、表格截图、网页截图、语音或视频片段。</p><p>多模态能力对律师很有价值，例如识别扫描合同、查看证据照片、理解组织架构图、读取财务表格截图、检查 PPT 页面。但多模态输出应视为“辅助识别结果”，不能直接替代 OCR 校对、原件核验、证据真实性判断和律师审查。涉及金额、日期、签署主体、印章、手写内容、证据页码时，应回到原文件或人工校对。</p></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>11 / 79</span></footer>
+  </div>
+</section>
+<section class="slide content-slide" data-index="12" aria-label="第 12 页：五、目前常见的境外和境内大模型">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">第一章 基础概念：大模型、Agent 与主流工具形态</p>
+      <h2>五、目前常见的境外和境内大模型</h2>
+    </header>
+    <div class="slide-body"><p>以下仅列培训中常见的大模型品牌，目的在于帮助律师理解市场格局，不构成采购建议。模型名称、版本和可用地区更新很快，实际使用前应以官方页面和所在机构采购策略为准。</p></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>12 / 79</span></footer>
+  </div>
+</section>
+<section class="slide table-slide" data-index="13" aria-label="第 13 页：表1-3：常见大模型品牌示例">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">五、目前常见的境外和境内大模型</p>
+      <h2>表1-3：常见大模型品牌示例</h2>
+    </header>
+    <div class="slide-body"><p class="table-caption">表1-3：常见大模型品牌示例</p><div class="table-wrap"><table class="data-table dense"><thead><tr><th>类别</th><th>代表模型/品牌</th><th>简要定位</th></tr></thead><tbody><tr><td>境外闭源/商业模型</td><td>OpenAI GPT/ChatGPT、Anthropic Claude、Google Gemini、xAI Grok</td><td>通常产品成熟、工具生态强，适合通用知识工作、复杂推理、长文本处理和 Agent 工作流。</td></tr><tr><td>境外开源/开权重模型</td><td>Meta Llama、Mistral、部分开源社区模型</td><td>适合希望自主部署、控制成本或做内部系统集成的团队，但需要技术和安全能力。</td></tr><tr><td>境内商业/开源模型</td><td>DeepSeek、阿里 Qwen/通义千问、月之暗面 Kimi、智谱 GLM/Z.ai、百度文心/ERNIE、腾讯混元、MiniMax、讯飞星火、零一万物 Yi</td><td>中文语境、国内应用生态和本地化部署选择较多，适合中文办公、企业集成和合规可控场景。</td></tr><tr><td>法律垂直模型/系统</td><td>律所、法律数据库或政企供应商基于通用模型封装的法律工具</td><td>优点是可能接入法规、案例、模板和内部知识库；缺点是底层模型、检索质量和数据权限仍需核验。</td></tr></tbody></table></div></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>13 / 79</span></footer>
+  </div>
+</section>
+<section class="slide content-slide" data-index="14" aria-label="第 14 页：六、大模型的主要使用方式：网页、CLI 与 App">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">第一章 基础概念：大模型、Agent 与主流工具形态</p>
+      <h2>六、大模型的主要使用方式：网页、CLI 与 App</h2>
+    </header>
+    <div class="slide-body"><p>目前律师接触大模型，主要有三类入口。第一类是网页版，例如 ChatGPT、Claude、Gemini、Kimi、DeepSeek 等网页聊天窗口，适合问答、文本分析、文件上传和轻量知识工作。第二类是 CLI 版本，即在终端中运行的命令行 Agent，适合读取本地目录、执行脚本、处理多文件和开发自动化流程。第三类是桌面 App 或移动 App，包括桌面端、IDE 插件、手机端远程控制等，适合把 AI 放入日常工作环境。</p><p>培训中所说的“智能体/Agent”，通常不是指普通网页版聊天，而是指具备目标、工具、文件访问、浏览器或本地应用权限、可连续执行任务的 CLI、桌面 App、IDE 插件或移动端远程控制工具。判断一个工具是不是 Agent，关键不是界面形态，而是它是否能“看材料、调用工具、执行动作、迭代完成任务”。</p></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>14 / 79</span></footer>
+  </div>
+</section>
+<section class="slide table-slide" data-index="15" aria-label="第 15 页：表1-4：网页、CLI、App 三类入口的区别">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">六、大模型的主要使用方式：网页、CLI 与 App</p>
+      <h2>表1-4：网页、CLI、App 三类入口的区别</h2>
+    </header>
+    <div class="slide-body"><p class="table-caption">表1-4：网页、CLI、App 三类入口的区别</p><div class="table-wrap"><table class="data-table dense"><thead><tr><th>入口形态</th><th>典型特点</th><th>律师使用建议</th></tr></thead><tbody><tr><td>网页版</td><td>上手快，适合对话、上传文件、文本分析和轻量项目知识库</td><td>适合合同审阅、报告润色、法律分析初稿；不宜直接处理高敏原件。</td></tr><tr><td>CLI/终端 Agent</td><td>可读取目录、运行命令、生成文件、批量处理项目材料</td><td>适合底稿整理、文件重命名、表格生成、批量转换；需要技术基础和权限控制。</td></tr><tr><td>桌面 App/IDE 插件</td><td>可与本地文件、编辑器、桌面环境结合</td><td>适合长期项目工作区、代码/文档协作、MCP/Connector；需明确只读、审批和输出路径。</td></tr><tr><td>移动 App</td><td>适合查看进度、远程下达指令、审批继续执行</td><td>不宜把手机端理解为本地执行环境，核心权限仍来自其连接的主机或账号。</td></tr></tbody></table></div></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>15 / 79</span></footer>
+  </div>
+</section>
+<section class="slide content-slide" data-index="16" aria-label="第 16 页：七、主流境外与境内 Agent 工具示例">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">第一章 基础概念：大模型、Agent 与主流工具形态</p>
+      <h2>七、主流境外与境内 Agent 工具示例</h2>
+    </header>
+    <div class="slide-body"><p>Agent 工具的市场变化很快。以下仅作培训举例，重点是帮助律师理解不同工具的适用方向，而不是要求全部掌握。</p></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>16 / 79</span></footer>
+  </div>
+</section>
+<section class="slide table-slide" data-index="17" aria-label="第 17 页：表1-5：常见 Agent 工具示例">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">七、主流境外与境内 Agent 工具示例</p>
+      <h2>表1-5：常见 Agent 工具示例</h2>
+    </header>
+    <div class="slide-body"><p class="table-caption">表1-5：常见 Agent 工具示例</p><div class="table-wrap"><table class="data-table dense"><thead><tr><th>类别</th><th>代表工具</th><th>简要说明</th></tr></thead><tbody><tr><td>境外 Agent</td><td>Claude Desktop / Claude Code、OpenAI Codex、Google Antigravity、OpenCode、Cursor</td><td>多用于本地文件、代码、网页、终端、MCP 和工作流自动化。其中 Codex、Claude Code、Antigravity、OpenCode 更接近“可执行工作台”。</td></tr><tr><td>境内 Agent</td><td>腾讯 WorkBuddy、智谱 ZCode / Z.ai Agent、Kimi 相关 Agent 能力、通义/千问办公与代码助手、百度智能体平台等</td><td>更贴近中文办公、企业系统、国内云生态和本地合规部署，具体可用能力取决于账号、地区和企业采购版本。</td></tr><tr><td>法律团队优先关注</td><td>Codex、Claude/ChatGPT 项目、Claude Desktop/MCP、WorkBuddy、Kimi/DeepSeek/通义/智谱等中文模型入口</td><td>优先掌握“文档处理、材料索引、风险清单、格式整理、检索核验、权限控制”这些律师高频场景。</td></tr></tbody></table></div></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>17 / 79</span></footer>
+  </div>
+</section>
+<section class="slide content-slide" data-index="18" aria-label="第 18 页：七、主流境外与境内 Agent 工具示例（2）">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">第一章 基础概念：大模型、Agent 与主流工具形态</p>
+      <h2>七、主流境外与境内 Agent 工具示例（2）</h2>
+    </header>
+    <div class="slide-body"><p>注意：不是所有 Agent 都适合法律工作。律师选择 Agent 时，应看四项：是否能限制读取范围；是否能禁止自动发送、删除、覆盖；是否能输出可追溯文件；是否能在团队内形成审计和复核。</p></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>18 / 79</span></footer>
+  </div>
+</section>
+<section class="slide content-slide" data-index="19" aria-label="第 19 页：八、OpenClaw 与上述 Agent 的区别，以及律师为什么通常用不上">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">第一章 基础概念：大模型、Agent 与主流工具形态</p>
+      <h2>八、OpenClaw 与上述 Agent 的区别，以及律师为什么通常用不上</h2>
+    </header>
+    <div class="slide-body"><p>OpenClaw 更像一个开源、自托管的个人 AI 助理/网关：它可以把用户常用的聊天渠道、个人设备和多个 AI Agent 连接起来，让用户通过 WhatsApp、Telegram、Slack、微信或其他消息入口调用本地或远程 Agent 执行任务。它的特点是“通道多、权限广、可改造、可持续在线”。</p><p>这与 Codex、Claude Desktop、Antigravity、OpenCode 等工具的重点不同。后者通常围绕一个工作区、项目文件夹、代码库、浏览器或桌面任务展开；OpenClaw 更偏“个人自动化中枢”和“多渠道常驻助理”。它适合有开发能力、愿意自托管、需要连接大量个人工具的用户，不是普通律师处理法律文件的首选入口。</p><p>律师通常用不上 OpenClaw，主要有四个原因：第一，部署和维护门槛高，需要服务器、网关、插件、权限和安全配置；第二，权限范围容易过宽，可能接触邮箱、聊天、文件系统、日历和第三方账号；第三，法律工作强调项目隔离、来源可追溯和人工确认，而 OpenClaw 的常驻助理形态更容易引入跨项目上下文和自动化风险；第四，OpenClaw 生态中 Skill/插件供应链安全风险更高，不适合直接接触客户秘密、诉讼策略、商业秘密和涉密资料。</p><p class="callout">结论上，律师团队没有必要把 OpenClaw 作为培训重点。对多数律师而言，掌握网页版大模型、项目空间、Codex、Claude Desktop/MCP、Skill、Connector 和基本权限控制，已经覆盖绝大多数法律办公场景。OpenClaw 可以作为技术团队或个人自动化爱好者的研究对象，但不建议作为律所客户材料处理的默认工具。</p></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>19 / 79</span></footer>
+  </div>
+</section>
+<section class="slide content-slide" data-index="20" aria-label="第 20 页：九、大模型与 Agent 的核心区别">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">第一章 基础概念：大模型、Agent 与主流工具形态</p>
+      <h2>九、大模型与 Agent 的核心区别</h2>
+    </header>
+    <div class="slide-body"><p>大模型主要提供“理解和生成能力”；Agent 是在大模型基础上叠加目标、工具、上下文、记忆、权限和执行循环后的工作系统。这个区分对法律工作尤其重要：大模型的主要风险是输出错误、遗漏、幻觉、法律依据不准；Agent 的风险还包括读取资料范围过宽、连接器权限过大、误改文件、误发邮件、跨项目泄露、长期保留客户秘密等。</p></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>20 / 79</span></footer>
+  </div>
+</section>
+<section class="slide table-slide" data-index="21" aria-label="第 21 页：表1-6：大模型与 Agent 的核心区别">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">九、大模型与 Agent 的核心区别</p>
+      <h2>表1-6：大模型与 Agent 的核心区别</h2>
+    </header>
+    <div class="slide-body"><p class="table-caption">表1-6：大模型与 Agent 的核心区别</p><div class="table-wrap"><table class="data-table dense"><thead><tr><th>维度</th><th>大模型</th><th>Agent</th></tr></thead><tbody><tr><td>工作方式</td><td>根据当前提示词生成答案或文本。</td><td>围绕目标持续执行，可能调用文件、浏览器、数据库、插件和本地应用。</td></tr><tr><td>典型任务</td><td>总结、润色、初步分析、问答、起草片段。</td><td>底稿整理、批量文件处理、网页/App 操作、多步骤产出、持续推进。</td></tr><tr><td>核心控制点</td><td>提示词、材料范围、输出复核。</td><td>权限、工具、任务边界、执行动作、审计留痕。</td></tr><tr><td>主要风险</td><td>幻觉、遗漏、过时法律依据、事实推断错误。</td><td>误读误改、越权访问、自动提交、跨项目上下文污染、长期记忆泄露。</td></tr></tbody></table></div></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>21 / 79</span></footer>
+  </div>
+</section>
+<section class="slide content-slide" data-index="22" aria-label="第 22 页：九、大模型与 Agent 的核心区别（2）">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">第一章 基础概念：大模型、Agent 与主流工具形态</p>
+      <h2>九、大模型与 Agent 的核心区别（2）</h2>
+    </header>
+    <div class="slide-body"><p class="callout">一句话概括：大模型像“法律助理的大脑”，Agent 像“带工具箱、文件柜钥匙和执行权限的法律项目助理”。律师团队的 AI 管理不能停留在“怎么提问”，而应升级为“任务分级、资料分级、权限分级、工具分级和交付复核”。</p></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>22 / 79</span></footer>
+  </div>
+</section>
+<section class="slide chapter-slide" data-index="23" aria-label="第 23 页：第二章 总体框架：律师如何理解 Agent 工具体系">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">章节</p>
+      <h2>第二章 总体框架：律师如何理解 Agent 工具体系</h2>
+    </header>
+    <div class="slide-body"><div class="chapter-layout"><div class="chapter-mark">Chapter</div><ul><li>一、基本原则</li><li>二、不同工具的分工</li></ul></div></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>23 / 79</span></footer>
+  </div>
+</section>
+<section class="slide content-slide" data-index="24" aria-label="第 24 页：第二章 总体框架：律师如何理解 Agent 工具体系">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">第二章 总体框架：律师如何理解 Agent 工具体系</p>
+      <h2>第二章 总体框架：律师如何理解 Agent 工具体系</h2>
+    </header>
+    <div class="slide-body"><p>法律团队使用 AI Agent，核心不是让模型“替律师判断”，而是让其在受控范围内完成可验证、可追溯、可复核的知识工作。优先交给 Agent 的事项包括底稿索引、证据目录、合同风险扫描、材料摘要、章节映射、风险清单、待补充资料清单和格式整理。</p><p>不宜直接交给 Agent 单独完成的事项包括现行法律依据有效性判断、重大案件胜败概率、监管口径确认、客户交易底线、诉讼策略定案、涉密资料处理、个人信息跨境合规判断和最终法律意见签发。</p></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>24 / 79</span></footer>
+  </div>
+</section>
+<section class="slide table-slide" data-index="25" aria-label="第 25 页：表2-1：律师使用 Agent 的七层工作框架">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">第二章 总体框架：律师如何理解 Agent 工具体系</p>
+      <h2>表2-1：律师使用 Agent 的七层工作框架</h2>
+    </header>
+    <div class="slide-body"><p class="table-caption">表2-1：律师使用 Agent 的七层工作框架</p><div class="table-wrap"><table class="data-table dense"><thead><tr><th>层级</th><th>内容</th><th>律师控制重点</th></tr></thead><tbody><tr><td>1. 基础模型</td><td>Claude、ChatGPT、Gemini、通用大模型</td><td>选对能力档位，不把模型输出当最终结论</td></tr><tr><td>2. 指令体系</td><td>全局指令、项目指令、对话提示词</td><td>立场、法域、材料边界、输出格式、禁止事项</td></tr><tr><td>3. 项目知识</td><td>项目文件、模板、底稿、证据材料</td><td>单客户/单项目隔离，防止上下文污染</td></tr><tr><td>4. Skill</td><td>固定流程、审查清单、输出模板</td><td>沉淀可重复方法，不放项目秘密</td></tr><tr><td>5. 工具与连接</td><td>MCP、Connector、Chrome、Computer Use</td><td>默认只读、按项目授权、禁止自动外发/删除</td></tr><tr><td>6. 执行模式</td><td>普通任务、计划模式、Goal、自动化</td><td>先看计划，再执行；复杂任务设验收标准</td></tr><tr><td>7. 交付复核</td><td>来源核对、法律依据核验、版本管理</td><td>律师最终判断并留痕</td></tr></tbody></table></div></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>25 / 79</span></footer>
+  </div>
+</section>
+<section class="slide content-slide" data-index="26" aria-label="第 26 页：一、基本原则">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">第二章 总体框架：律师如何理解 Agent 工具体系</p>
+      <h2>一、基本原则</h2>
+    </header>
+    <div class="slide-body"><ul class="slide-list"><li>以客户利益为出发点，但不得输出缺乏事实和法律依据的确定性判断。</li></ul><ul class="slide-list"><li>以材料为边界，未在底稿、证据或合同中出现的事实不得补写。</li></ul><ul class="slide-list"><li>以可追溯为交付标准，每个风险点、事实点、金额、日期、主体关系均应能回溯来源。</li></ul><ul class="slide-list"><li>以律师复核为终点，Agent 的输出只能作为草稿、清单或辅助分析。</li></ul><ul class="slide-list"><li>以最小化数据暴露为安全底线，客户原始材料能不上传就不上传，能脱敏就脱敏。</li></ul></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>26 / 79</span></footer>
+  </div>
+</section>
+<section class="slide content-slide" data-index="27" aria-label="第 27 页：二、不同工具的分工">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">第二章 总体框架：律师如何理解 Agent 工具体系</p>
+      <h2>二、不同工具的分工</h2>
+    </header>
+    <div class="slide-body"><p>Codex 更适合在本地或云端工作区内处理多文件、多步骤、需要产出文件或表格的任务；Claude 更适合长上下文阅读、法律材料整理、文本分析、项目知识库问答和 Agent/Cowork 类型的长任务协作；普通 ChatGPT 更适合问答、单文档审阅、起草、润色、解释和快速推理。三者共同点是都需要明确目标、范围、禁止事项和验收标准。</p></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>27 / 79</span></footer>
+  </div>
+</section>
+<section class="slide table-slide" data-index="28" aria-label="第 28 页：表2-2：律师任务分流建议">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">二、不同工具的分工</p>
+      <h2>表2-2：律师任务分流建议</h2>
+    </header>
+    <div class="slide-body"><p class="table-caption">表2-2：律师任务分流建议</p><div class="table-wrap"><table class="data-table dense"><thead><tr><th>任务类型</th><th>优先工具</th><th>原因</th></tr></thead><tbody><tr><td>单份合同审阅、条款润色、邮件起草</td><td>普通 ChatGPT / Claude</td><td>交互快，适合文本推理和表达优化</td></tr><tr><td>长材料阅读、尽调问答、项目知识库</td><td>Claude Project / ChatGPT 项目</td><td>适合长上下文和项目资料问答</td></tr><tr><td>多文件批量整理、生成 Word/Excel/目录索引</td><td>Codex</td><td>可在工作区内读写文件、运行脚本、形成交付物</td></tr><tr><td>需要登录网页或桌面软件操作</td><td>Codex Chrome 扩展 / Computer Use</td><td>能在授权范围内操作网页或图形界面</td></tr><tr><td>需查企业信息、法规、案例、内部知识库</td><td>MCP/Connector</td><td>接入外部权威数据和系统权限</td></tr></tbody></table></div></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>28 / 79</span></footer>
+  </div>
+</section>
+<section class="slide chapter-slide" data-index="29" aria-label="第 29 页：第三章 智能体指令体系与对话管理：全局指令、项目指令、对话提示词与模型选择">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">章节</p>
+      <h2>第三章 智能体指令体系与对话管理：全局指令、项目指令、对话提示词与模型选择</h2>
+    </header>
+    <div class="slide-body"><div class="chapter-layout"><div class="chapter-mark">Chapter</div><ul><li>一、全局指令：只放长期稳定规则</li><li>二、项目指令：按业务线或项目建立工作区</li><li>三、对话提示词：本次任务的交付标准</li><li>四、对话管理技巧：单专项任务、上下文隔离、计划模式与提示词迭代</li><li>五、模型选择：速度、成本、复杂度匹配</li></ul></div></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>29 / 79</span></footer>
+  </div>
+</section>
+<section class="slide content-slide" data-index="30" aria-label="第 30 页：第三章 智能体指令体系与对话管理：全局指令、项目指令、对话提示词与模型选择">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">第三章 智能体指令体系与对话管理：全局指令、项目指令、对话提示词与模型选择</p>
+      <h2>第三章 智能体指令体系与对话管理：全局指令、项目指令、对话提示词与模型选择</h2>
+    </header>
+    <div class="slide-body"><p>本章不是 Claude 专用。无论使用 Claude、ChatGPT、Codex、Gemini，还是其他 Agent，稳定使用都应避免把所有内容塞进一次性提示词。较优结构是：全局指令放长期规则，项目指令放业务规则，对话提示词放本次任务，模型选择匹配工作复杂度。</p></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>30 / 79</span></footer>
+  </div>
+</section>
+<section class="slide content-slide" data-index="31" aria-label="第 31 页：一、全局指令：只放长期稳定规则">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">第三章 智能体指令体系与对话管理：全局指令、项目指令、对话提示词与模型选择</p>
+      <h2>一、全局指令：只放长期稳定规则</h2>
+    </header>
+    <div class="slide-body"><p>全局指令处理“每一次都应遵守”的工作方法，例如中文法律语境、客户立场、法律依据核验、禁止编造、输出结构和文书风格。不要把某个项目事实、某个客户名称、某个交易底线放进全局指令，否则容易污染后续项目。</p><p>可用写法：默认使用中文，适用中国大陆法律术语和文书习惯。未明确客户立场时，默认站在用户客户一方并说明假设。法律分析先给结论，再列依据、分析、风险提示和建议动作。不得编造事实、法条、案例或企业信息。涉及现行法律、案例、工商信息、监管规则时，应提示核验或调用可用检索工具。</p></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>31 / 79</span></footer>
+  </div>
+</section>
+<section class="slide content-slide" data-index="32" aria-label="第 32 页：二、项目指令：按业务线或项目建立工作区">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">第三章 智能体指令体系与对话管理：全局指令、项目指令、对话提示词与模型选择</p>
+      <h2>二、项目指令：按业务线或项目建立工作区</h2>
+    </header>
+    <div class="slide-body"><p>项目指令比全局指令更具体，适合围绕诉讼、合同、尽调、IPO、常年法律顾问等业务分别设置。项目指令应写明工作流、审查维度、输出格式、禁止事项和人工复核点。不同客户、不同案件、不同交易项目原则上不要混放在同一项目空间。</p></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>32 / 79</span></footer>
+  </div>
+</section>
+<section class="slide table-slide" data-index="33" aria-label="第 33 页：表3-1：项目指令的适用边界">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">二、项目指令：按业务线或项目建立工作区</p>
+      <h2>表3-1：项目指令的适用边界</h2>
+    </header>
+    <div class="slide-body"><p class="table-caption">表3-1：项目指令的适用边界</p><div class="table-wrap"><table class="data-table dense"><thead><tr><th>项目类型</th><th>适合写入项目指令</th><th>不宜写入项目指令</th></tr></thead><tbody><tr><td>诉讼项目</td><td>争议焦点、证据三性、举证责任、文书结构</td><td>未核验证据事实、对外不可披露诉讼策略</td></tr><tr><td>合同审阅项目</td><td>风险表字段、修改原则、我方立场、商业条款边界</td><td>具体交易底线、未经客户确认的商业让步</td></tr><tr><td>尽调项目</td><td>章节结构、风险分级、底稿索引字段、待补充资料口径</td><td>全量客户秘密、未经脱敏的个人信息、完整底稿原件</td></tr><tr><td>常法项目</td><td>回复风格、常见问题分类、输出格式</td><td>不同客户之间的历史敏感信息</td></tr></tbody></table></div></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>33 / 79</span></footer>
+  </div>
+</section>
+<section class="slide content-slide" data-index="34" aria-label="第 34 页：三、对话提示词：本次任务的交付标准">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">第三章 智能体指令体系与对话管理：全局指令、项目指令、对话提示词与模型选择</p>
+      <h2>三、对话提示词：本次任务的交付标准</h2>
+    </header>
+    <div class="slide-body"><p>对话提示词应清楚写明本次任务的客户立场、事实背景、材料范围、任务目标、审查重点、输出格式、禁止事项和不确定事项处理方式。提示词越接近律师的工作交底，输出越稳定。</p></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>34 / 79</span></footer>
+  </div>
+</section>
+<section class="slide table-slide" data-index="35" aria-label="第 35 页：表3-2：对话提示词的七要素与三控制">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">三、对话提示词：本次任务的交付标准</p>
+      <h2>表3-2：对话提示词的七要素与三控制</h2>
+    </header>
+    <div class="slide-body"><p class="table-caption">表3-2：对话提示词的七要素与三控制</p><div class="table-wrap"><table class="data-table dense"><thead><tr><th>类别</th><th>内容</th><th>示例</th></tr></thead><tbody><tr><td>七要素1</td><td>客户立场</td><td>站在乙方/被告/投资人/发行人一方</td></tr><tr><td>七要素2</td><td>事实背景</td><td>简述交易、争议、文件用途</td></tr><tr><td>七要素3</td><td>材料范围</td><td>仅基于本次上传文件和列明事实</td></tr><tr><td>七要素4</td><td>任务目标</td><td>审阅合同、整理证据、起草备忘录、生成清单</td></tr><tr><td>七要素5</td><td>审查重点</td><td>付款、违约、解除、责任限制、证据缺口</td></tr><tr><td>七要素6</td><td>输出格式</td><td>表格、清单、备忘录、可替换条款</td></tr><tr><td>七要素7</td><td>不确定事项处理</td><td>列入需律师核验/需客户确认</td></tr><tr><td>三控制1</td><td>禁止事项</td><td>不得编造、不得扩大服务范围、不得改商业条件</td></tr><tr><td>三控制2</td><td>来源标注</td><td>每个事实点标注文件名、页码或材料位置</td></tr><tr><td>三控制3</td><td>律师复核点</td><td>法律依据、工商信息、关键事实、最终结论</td></tr></tbody></table></div></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>35 / 79</span></footer>
+  </div>
+</section>
+<section class="slide content-slide" data-index="36" aria-label="第 36 页：四、对话管理技巧：单专项任务、上下文隔离、计划模式与提示词迭代">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">第三章 智能体指令体系与对话管理：全局指令、项目指令、对话提示词与模型选择</p>
+      <h2>四、对话管理技巧：单专项任务、上下文隔离、计划模式与提示词迭代</h2>
+    </header>
+    <div class="slide-body"><p>对话本身应被视为一个“最小工作空间”。同一个对话中已经出现的客户立场、事实背景、文件内容、模型错误和修正痕迹，都会影响后续输出。法律工作中最常见的失误，不是提示词写得不够长，而是把不同客户、不同案件、不同任务、不同版本材料塞进同一对话，导致上下文污染。</p><p class="numbered-point">（一）单对话单专项任务</p><p>一个对话原则上只处理一个专项任务。所谓“专项任务”，不是指只能问一个问题，而是指同一对话应围绕同一客户、同一项目、同一材料集合和同一交付物持续推进。例如，“基于 A 合同出具乙方审阅意见”可以在同一对话中先做风险表、再做替换条款、再做客户确认清单；但不宜在同一对话中又审 B 客户合同、又整理 C 案证据、又问另一个项目的法律检索。</p><p>出现下列情形时，应当新开对话：更换客户或相对方；更换案件或交易项目；从合同审阅切换为诉讼策略；从事实整理切换为法规检索；上传了新一批可能推翻旧结论的材料；模型已经开始混淆主体、日期、金额、文件版本或客户立场。</p><p class="numbered-point">（二）先隔离上下文，再要求输出</p><p>复杂任务开始前，应先明确“本次仅基于哪些材料工作”。不要让模型默认引用聊天历史、项目知识库或先前对话中的未核验信息。建议在提示词中写明：“仅以本次上传文件和下列事实为依据；不得引用本对话之外的信息；如材料之间存在冲突，应列明冲突并提示需律师确认。”</p><p>如果确需利用同一项目内的既有资料，应要求模型先列出其拟使用的来源清单，再进入实质分析。这样可以防止模型把旧版合同、旧版底稿、其他客户模板或过期法律依据混入本次结果。</p><p class="numbered-point">（三）提示词采用“七要素 + 三控制”结构</p><p>基础提示词应覆盖七个要素：客户立场、事实背景、材料范围、任务目标、审查重点、输出格式、不确定事项处理方式。在律师工作中，还应额外加入三项控制：禁止事项、来源标注、律师复核点。</p><p>可直接使用的通用开场提示如下：</p></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>36 / 79</span></footer>
+  </div>
+</section>
+<section class="slide content-slide" data-index="37" aria-label="第 37 页：四、对话管理技巧：单专项任务、上下文隔离、计划模式与提示词迭代（2）">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">第三章 智能体指令体系与对话管理：全局指令、项目指令、对话提示词与模型选择</p>
+      <h2>四、对话管理技巧：单专项任务、上下文隔离、计划模式与提示词迭代（2）</h2>
+    </header>
+    <div class="slide-body"><p>“本对话仅处理【客户/项目/文件名称】项下的【具体任务】。请站在【我方立场】出发，仅基于我本次提供的材料进行分析，不得引用其他对话或未提供事实。请按【输出格式】交付；所有事实判断标注来源文件或材料位置；无法确认的事项列入‘需律师复核/需客户确认’；不得编造法律依据、案例、工商信息、金额、日期或签署主体。”</p><p class="numbered-point">（四）复杂任务分步推进，不要一次要最终稿</p><p>尽调、证据整理、重大合同审阅、监管问询回复等任务，建议采用“三段式”推进：第一步做材料索引和事实抽取；第二步形成风险表、问题清单或章节大纲；第三步再起草正文并做反向复核。直接要求模型“一步到位写最终报告”，更容易出现遗漏、混入旧事实、法律依据未经核验和表述过度确定的问题。</p><p>每一步都应设置验收点。例如，第一轮只要求“列材料清单和事实来源，不给法律结论”；第二轮只要求“按风险等级归纳问题，不起草报告正文”；第三轮再要求“在已确认事实和风险清单基础上生成初稿”。</p><p class="numbered-point">（五）纠错提示词要精准，避免全盘重写</p><p>发现错误时，不建议只写“你错了，重写”。更好的纠错方式是明确错误位置、正确依据和保留范围。例如：“第 3 项风险引用的主体错误，应为甲公司而非乙公司。请仅修正该项及受其影响的结论，其他内容不变。”这种写法可以减少模型在重写过程中引入新的错误。</p><p>对法律文书修改，建议使用“保留—替换—新增—删除”四类指令：保留原结构和编号；替换某条表述；新增风险提示；删除无依据或过度承诺的结论。这样比笼统要求“润色一下”更符合律师审稿习惯。</p><p class="numbered-point">（六）对话结束前归档和复核（如需）</p><p>对话结束前，建议要求模型输出“本次任务摘要、已使用材料、形成的结论、待核验事项、下一步动作”。这一步不是形式化总结，而是为了把聊天过程沉淀成可审查的工作底稿，便于团队成员接手、复核和归档。</p></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>37 / 79</span></footer>
+  </div>
+</section>
+<section class="slide content-slide" data-index="38" aria-label="第 38 页：四、对话管理技巧：单专项任务、上下文隔离、计划模式与提示词迭代（3）">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">第三章 智能体指令体系与对话管理：全局指令、项目指令、对话提示词与模型选择</p>
+      <h2>四、对话管理技巧：单专项任务、上下文隔离、计划模式与提示词迭代（3）</h2>
+    </header>
+    <div class="slide-body"><p>归档提示词示例：“请基于本对话，生成一份交付前复核摘要，列明：1. 本次任务目标；2. 使用的材料清单；3. 已形成的主要结论；4. 仍需律师核验的法条/案例/工商信息/事实；5. 需要客户确认的商业或事实问题；6. 不应直接对外发送的表述。”</p><p class="numbered-point">（七）先用计划模式检查 AI 是否理解任务</p><p>复杂任务不要直接要求最终稿。更稳的做法是先进入计划模式，让 AI 说明它准备如何处理材料、如何分步骤推进、会输出哪些文件、哪些事项需要人工确认。Codex 中可使用 /plan；其他智能体可直接输入“先不要起草，请先给出工作计划、材料使用范围、风险点识别维度和输出物清单”。</p><p>计划模式提示词示例：先不要起草正文。请基于本次材料和我的任务目标，列出你的工作计划，包括：1. 拟使用的材料范围；2. 拟完成的步骤；3. 每一步的输出物；4. 你认为需要我补充或确认的事项；5. 你不会处理或不应擅自判断的事项。待我确认计划后，再进入执行。</p><p>计划模式的价值在于提前发现 AI 是否误解立场、遗漏材料、越权处理商业问题、过早给法律结论。律师确认计划后，再让其进入材料索引、风险归纳或正文起草，错误成本更低。</p></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>38 / 79</span></footer>
+  </div>
+</section>
+<section class="slide table-slide" data-index="39" aria-label="第 39 页：表3-3：模型选择建议">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">五、模型选择：速度、成本、复杂度匹配</p>
+      <h2>表3-3：模型选择建议</h2>
+    </header>
+    <div class="slide-body"><p class="table-caption">表3-3：模型选择建议</p><div class="table-wrap"><table class="data-table dense"><thead><tr><th>任务复杂度</th><th>模型选择</th><th>说明</th></tr></thead><tbody><tr><td>低复杂度</td><td>轻量/快速模型</td><td>格式整理、摘要初稿、简单分类、低风险改写</td></tr><tr><td>中等复杂度</td><td>主力模型</td><td>合同审阅、证据目录、尽调章节、法律备忘录初稿</td></tr><tr><td>高复杂度</td><td>最高能力模型或多模型复核</td><td>重大风险判断、复杂争议焦点、监管回复核心论证、交付前反向复核</td></tr></tbody></table></div></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>39 / 79</span></footer>
+  </div>
+</section>
+<section class="slide chapter-slide" data-index="40" aria-label="第 40 页：第四章 Codex 工具：Goal、Chrome、Computer Use、手机版与 Record &amp; Replay">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">章节</p>
+      <h2>第四章 Codex 工具：Goal、Chrome、Computer Use、手机版与 Record &amp; Replay</h2>
+    </header>
+    <div class="slide-body"><div class="chapter-layout"><div class="chapter-mark">Chapter</div><ul><li>一、Codex Goal：复杂任务的目标与验收标准</li><li>二、Codex Chrome 插件：用于登录态网页，但必须严控授权</li><li>三、Computer Use：图形界面操作要比命令行更谨慎</li><li>四、手机版 Codex：不是手机本地执行，而是远程控制已连接主机</li><li>五、Record &amp; Replay：把“可演示的重复流程”转成 Skill</li></ul></div></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>40 / 79</span></footer>
+  </div>
+</section>
+<section class="slide content-slide" data-index="41" aria-label="第 41 页：第四章 Codex 工具：Goal、Chrome、Computer Use、手机版与 Record &amp; Replay">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">第四章 Codex 工具：Goal、Chrome、Computer Use、手机版与 Record &amp; Replay</p>
+      <h2>第四章 Codex 工具：Goal、Chrome、Computer Use、手机版与 Record &amp; Replay</h2>
+    </header>
+    <div class="slide-body"><p>本章先讲 Codex 工具。Codex 更接近“可执行的工作台”，重点不是一次性问答，而是让 Agent 在受控环境中围绕目标、文件、浏览器、本地应用和远程设备持续推进任务。律师使用 Codex，应把重点放在任务边界、文件权限、输出物、版本控制和人工确认。</p></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>41 / 79</span></footer>
+  </div>
+</section>
+<section class="slide content-slide" data-index="42" aria-label="第 42 页：一、Codex Goal：复杂任务的目标与验收标准">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">第四章 Codex 工具：Goal、Chrome、Computer Use、手机版与 Record &amp; Replay</p>
+      <h2>一、Codex Goal：复杂任务的目标与验收标准</h2>
+    </header>
+    <div class="slide-body"><p>Codex Goal 可理解为“给 Agent 设定一个持续执行的工作目标和完成条件”。Goal 适用于需要多个步骤、需要清晰完成定义、需要 Agent 持续检查进度的任务。Goal 文本既是起始提示，也是完成标准，因此必须写清楚工作范围、不能修改什么、如何验证、何时停止。</p></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>42 / 79</span></footer>
+  </div>
+</section>
+<section class="slide table-slide" data-index="43" aria-label="第 43 页：表4-1：Codex Goal 必备要素">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">一、Codex Goal：复杂任务的目标与验收标准</p>
+      <h2>表4-1：Codex Goal 必备要素</h2>
+    </header>
+    <div class="slide-body"><p class="table-caption">表4-1：Codex Goal 必备要素</p><div class="table-wrap"><table class="data-table dense"><thead><tr><th>要素</th><th>写法</th></tr></thead><tbody><tr><td>目标成果</td><td>整理底稿、生成风险表、起草报告初稿、制作修改说明表</td></tr><tr><td>输入范围</td><td>仅限当前文件夹/指定文件/本次上传材料</td></tr><tr><td>禁止事项</td><td>不得删除或覆盖原件；不得编造事实；不得自行确定未核验法律依据</td></tr><tr><td>过程要求</td><td>先建立索引，再抽取事实，再归纳风险，最后生成正文</td></tr><tr><td>输出物</td><td>Word 初稿、Excel 风险表、待补充资料清单、修改说明表</td></tr><tr><td>验收标准</td><td>每个事实点可回溯来源；所有不确定事项列为需复核；输出文件命名清楚</td></tr><tr><td>停止规则</td><td>完成指定交付物后停止；如材料冲突或权限不足，暂停并报告</td></tr></tbody></table></div></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>43 / 79</span></footer>
+  </div>
+</section>
+<section class="slide content-slide" data-index="44" aria-label="第 44 页：一、Codex Goal：复杂任务的目标与验收标准（2）">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">第四章 Codex 工具：Goal、Chrome、Computer Use、手机版与 Record &amp; Replay</p>
+      <h2>一、Codex Goal：复杂任务的目标与验收标准（2）</h2>
+    </header>
+    <div class="slide-body"><p>律师尽调 Goal 示例：/goal 基于当前项目文件夹中的尽调底稿，整理一份法律尽调报告初稿。不得修改或覆盖原始文件。请先生成底稿索引表，列明文件名称、主体、日期、关键事实、对应报告章节；再形成风险事项汇总表和待补充资料清单；最后按照主体资格、历史沿革、股权结构、重大资产、业务资质、重大合同、劳动人事、知识产权、诉讼仲裁、行政处罚、税务及合规、结论与建议起草报告。每个风险点均需标注来源文件。无法确认事项列入“需律师复核”。完成上述交付物后停止。</p></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>44 / 79</span></footer>
+  </div>
+</section>
+<section class="slide content-slide" data-index="45" aria-label="第 45 页：二、Codex Chrome 插件：用于登录态网页，但必须严控授权">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">第四章 Codex 工具：Goal、Chrome、Computer Use、手机版与 Record &amp; Replay</p>
+      <h2>二、Codex Chrome 插件：用于登录态网页，但必须严控授权</h2>
+    </header>
+    <div class="slide-body"><p>Codex Chrome 插件适合需要使用现有浏览器登录状态的网站任务，例如访问已经登录的内部系统、邮箱、CRM、项目管理系统或数据平台。它的价值在于让 Codex 能在浏览器中读取或操作页面，但这也意味着网页内容、登录状态、截图和操作过程可能进入任务上下文。</p></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>45 / 79</span></footer>
+  </div>
+</section>
+<section class="slide table-slide" data-index="46" aria-label="第 46 页：表4-2：Chrome 插件的律师使用边界">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">二、Codex Chrome 插件：用于登录态网页，但必须严控授权</p>
+      <h2>表4-2：Chrome 插件的律师使用边界</h2>
+    </header>
+    <div class="slide-body"><p class="table-caption">表4-2：Chrome 插件的律师使用边界</p><div class="table-wrap"><table class="data-table"><thead><tr><th>适合使用</th><th>不适合使用</th></tr></thead><tbody><tr><td>登录网页中批量下载公开或已授权文件</td><td>含客户秘密、商业秘密或个人敏感信息的系统，且未获授权或未脱敏</td></tr><tr><td>在内部知识库检索指定项目材料</td><td>让 Agent 自由浏览整个邮箱、云盘或所有客户项目</td></tr><tr><td>访问需要浏览器状态的工具页面</td><td>自动发送邮件、提交表单、发布内容或删除文件</td></tr><tr><td>网页内容需要与本地文件联动整理</td><td>使用私人浏览器主账号暴露全部历史、书签、下载和登录状态</td></tr></tbody></table></div></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>46 / 79</span></footer>
+  </div>
+</section>
+<section class="slide content-slide" data-index="47" aria-label="第 47 页：二、Codex Chrome 插件：用于登录态网页，但必须严控授权（2）">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">第四章 Codex 工具：Goal、Chrome、Computer Use、手机版与 Record &amp; Replay</p>
+      <h2>二、Codex Chrome 插件：用于登录态网页，但必须严控授权（2）</h2>
+    </header>
+    <div class="slide-body"><p>实务建议是：单独使用工作浏览器配置文件；只登录必要系统；任务结束后退出登录或关闭授权；涉及客户资料时，不让 Codex 自动外发、提交、删除、覆盖或移动文件。</p></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>47 / 79</span></footer>
+  </div>
+</section>
+<section class="slide content-slide" data-index="48" aria-label="第 48 页：三、Computer Use：图形界面操作要比命令行更谨慎">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">第四章 Codex 工具：Goal、Chrome、Computer Use、手机版与 Record &amp; Replay</p>
+      <h2>三、Computer Use：图形界面操作要比命令行更谨慎</h2>
+    </header>
+    <div class="slide-body"><p>Computer Use 让 Codex 能查看并操作 macOS 或 Windows 图形界面，适合命令行或结构化连接器无法覆盖的场景，例如测试桌面软件、复现图形界面问题、修改应用设置、跨多个桌面应用执行小范围流程。</p><p>律师使用时要注意，Computer Use 可能看到屏幕内容、剪贴板、已登录网页、本地窗口和通知信息。使用前应关闭无关窗口、清空敏感剪贴板、切换至专用桌面、限制可见文件夹，并要求每次涉及发送、提交、删除、覆盖的动作均需人工确认。</p></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>48 / 79</span></footer>
+  </div>
+</section>
+<section class="slide content-slide" data-index="49" aria-label="第 49 页：四、手机版 Codex：不是手机本地执行，而是远程控制已连接主机">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">第四章 Codex 工具：Goal、Chrome、Computer Use、手机版与 Record &amp; Replay</p>
+      <h2>四、手机版 Codex：不是手机本地执行，而是远程控制已连接主机</h2>
+    </header>
+    <div class="slide-body"><p>手机版 Codex 更准确地说，是在 ChatGPT 移动端对已连接的 Codex 主机进行远程访问和控制。手机发送提示、审批和后续指令；项目文件、终端、插件、MCP、浏览器、Computer Use 和本地权限仍来自已连接的 Mac、Windows 或远程环境。</p></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>49 / 79</span></footer>
+  </div>
+</section>
+<section class="slide table-slide" data-index="50" aria-label="第 50 页：表4-3：手机版 Codex 的使用边界">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">四、手机版 Codex：不是手机本地执行，而是远程控制已连接主机</p>
+      <h2>表4-3：手机版 Codex 的使用边界</h2>
+    </header>
+    <div class="slide-body"><p class="table-caption">表4-3：手机版 Codex 的使用边界</p><div class="table-wrap"><table class="data-table"><thead><tr><th>适合场景</th><th>注意事项</th></tr></thead><tbody><tr><td>路上查看 Codex 任务进度</td><td>不要在公共场合显示客户资料或屏幕截图</td></tr><tr><td>审批计划、确认下一步、查看生成文件</td><td>手机只是控制端，不代表资料在手机本地安全隔离</td></tr><tr><td>让远程主机继续整理文件或生成交付物</td><td>确保主机已锁定权限、工作区单项目隔离</td></tr></tbody></table></div></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>50 / 79</span></footer>
+  </div>
+</section>
+<section class="slide content-slide" data-index="51" aria-label="第 51 页：五、Record &amp; Replay：把“可演示的重复流程”转成 Skill">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">第四章 Codex 工具：Goal、Chrome、Computer Use、手机版与 Record &amp; Replay</p>
+      <h2>五、Record &amp; Replay：把“可演示的重复流程”转成 Skill</h2>
+    </header>
+    <div class="slide-body"><p>Record &amp; Replay 适合“用文字很难描述，但实际操作一遍很清楚”的重复流程。典型做法是：在 Mac 上示范一次流程，由 Codex 记录、检查步骤，并草拟为可复用 Skill。对于律师团队，这类功能适合把固定网站、Chrome、桌面应用、表格系统中的重复操作沉淀下来。</p><p>需要注意，Record &amp; Replay 不是让 Codex 学会所有法律判断，而是把重复 UI 流程变成可复用操作程序。例如：从指定系统导出项目文件清单、把下载材料按命名规则放入文件夹、在网页表单中填写非敏感字段、按固定步骤生成内部检查表。涉及客户秘密、系统提交、正式发送、删除、覆盖的步骤，应保留人工确认。</p></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>51 / 79</span></footer>
+  </div>
+</section>
+<section class="slide table-slide" data-index="52" aria-label="第 52 页：表4-4：Record &amp; Replay 适合沉淀的律师流程">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">五、Record &amp; Replay：把“可演示的重复流程”转成 Skill</p>
+      <h2>表4-4：Record &amp; Replay 适合沉淀的律师流程</h2>
+    </header>
+    <div class="slide-body"><p class="table-caption">表4-4：Record &amp; Replay 适合沉淀的律师流程</p><div class="table-wrap"><table class="data-table dense"><thead><tr><th>流程类型</th><th>示例</th><th>控制点</th></tr></thead><tbody><tr><td>网页系统固定操作</td><td>登录项目管理系统，筛选某项目资料并导出清单</td><td>使用专用账号，只读权限，导出后人工检查</td></tr><tr><td>桌面 App 固定操作</td><td>在 PDF 工具中批量生成书签或拆分文件</td><td>先复制文件，不改原件</td></tr><tr><td>表格格式化流程</td><td>将底稿索引表按固定列宽、筛选、冻结窗格处理</td><td>保留源表，输出新版本</td></tr><tr><td>文件归档流程</td><td>按资料类别重命名并复制到 output 文件夹</td><td>不得删除或覆盖原始底稿</td></tr></tbody></table></div></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>52 / 79</span></footer>
+  </div>
+</section>
+<section class="slide chapter-slide" data-index="53" aria-label="第 53 页：第五章 Skill、MCP/Connector 与 Plugin 的适用边界">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">章节</p>
+      <h2>第五章 Skill、MCP/Connector 与 Plugin 的适用边界</h2>
+    </header>
+    <div class="slide-body"><div class="chapter-layout"><div class="chapter-mark">Chapter</div><ul><li>一、什么情况下用 Skill</li><li>二、制作 Skill 的几种方式</li><li>三、哪些场景不适合用 Skill</li><li>四、MCP/Connector：需要外部数据或系统权限时使用</li><li>五、Plugin：团队级打包场景，个人日常不必优先</li></ul></div></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>53 / 79</span></footer>
+  </div>
+</section>
+<section class="slide content-slide" data-index="54" aria-label="第 54 页：第五章 Skill、MCP/Connector 与 Plugin 的适用边界">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">第五章 Skill、MCP/Connector 与 Plugin 的适用边界</p>
+      <h2>第五章 Skill、MCP/Connector 与 Plugin 的适用边界</h2>
+    </header>
+    <div class="slide-body"><p>Skill、MCP/Connector 和 Plugin 不是同一层工具。Skill 解决“固定工作方法”；MCP/Connector 解决“连接外部系统和数据”；Plugin 解决“把多个能力打包分发”。个人律师日常优先掌握 Prompt、Project、Skill、MCP/Connector；Plugin 了解其团队级适用场景即可。</p></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>54 / 79</span></footer>
+  </div>
+</section>
+<section class="slide content-slide" data-index="55" aria-label="第 55 页：一、什么情况下用 Skill">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">第五章 Skill、MCP/Connector 与 Plugin 的适用边界</p>
+      <h2>一、什么情况下用 Skill</h2>
+    </header>
+    <div class="slide-body"><p>Skill 适合沉淀“重复出现、步骤稳定、输出格式稳定、判断框架稳定”的工作方法。律师常见 Skill 包括合同审阅、证据目录、尽调底稿整理、问询函回复、法律备忘录、访谈纪要整理、底稿命名和归档流程。</p></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>55 / 79</span></footer>
+  </div>
+</section>
+<section class="slide table-slide" data-index="56" aria-label="第 56 页：表5-1：适合做成 Skill 的法律工作">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">一、什么情况下用 Skill</p>
+      <h2>表5-1：适合做成 Skill 的法律工作</h2>
+    </header>
+    <div class="slide-body"><p class="table-caption">表5-1：适合做成 Skill 的法律工作</p><div class="table-wrap"><table class="data-table"><thead><tr><th>工作类型</th><th>为什么适合</th></tr></thead><tbody><tr><td>合同审阅</td><td>审查维度和输出表格稳定，可复用风险等级、修改建议字段</td></tr><tr><td>证据目录</td><td>证明目的、争议焦点、三性评价和补强建议字段稳定</td></tr><tr><td>尽调底稿整理</td><td>底稿索引、章节映射、风险清单、待补资料清单流程稳定</td></tr><tr><td>监管问询回复</td><td>事实核查、口径控制、风险表述、需客户确认事项相对固定</td></tr><tr><td>文件命名归档</td><td>分类规则、命名规则、输出目录和对照表可标准化</td></tr></tbody></table></div></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>56 / 79</span></footer>
+  </div>
+</section>
+<section class="slide content-slide" data-index="57" aria-label="第 57 页：二、制作 Skill 的几种方式">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">第五章 Skill、MCP/Connector 与 Plugin 的适用边界</p>
+      <h2>二、制作 Skill 的几种方式</h2>
+    </header>
+    <div class="slide-body"><h3>（一）直接让智能体根据工作流程制作 Skill</h3><p>当你已经知道稳定工作流程时，可以直接要求智能体生成 Skill。提示词应说明适用场景、输入材料、处理步骤、输出格式、禁止事项、复核点和示例。生成后应由律师修改，再用于实际项目。</p><p>提示词示例：请基于以下合同审阅工作方法，帮我整理成一个可复用 Skill。Skill 应包括：适用场景、触发条件、输入要求、处理步骤、输出表格字段、风险等级标准、禁止事项、需律师复核事项和一个示例输出。</p><h3>（二）在完成一个可重复对话后，总结成 Skill</h3><p>很多 Skill 不必一开始设计。更稳的做法是在一次成功任务完成后，让智能体把本次对话中形成的步骤、格式、纠错经验、最终输出标准总结为 Skill。这样生成的 Skill 更贴近实际工作，而不是空泛方法论。</p><p>提示词示例：请把本次对话中已经验证有效的工作方法总结成一个可复用 Skill。要求保留本次任务中最终采用的步骤、表格字段、禁止事项、错误修正规则和交付前检查清单；不要写入本项目的客户名称、事实细节或商业秘密。</p></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>57 / 79</span></footer>
+  </div>
+</section>
+<section class="slide content-slide" data-index="58" aria-label="第 58 页：二、制作 Skill 的几种方式（2）">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">第五章 Skill、MCP/Connector 与 Plugin 的适用边界</p>
+      <h2>二、制作 Skill 的几种方式（2）</h2>
+    </header>
+    <div class="slide-body"><h3>（三）通过 Codex Record &amp; Replay 录制 Chrome 或其他 App 流程</h3><p>对于需要用到 Chrome、桌面 App、内部系统或固定网页流程的任务，如果文字说明过于复杂，可以通过 Codex 的 Record &amp; Replay 示范一次流程，再让 Codex 将其整理为 Skill。该方式适合“操作路径固定、变量少、风险动作可人工确认”的流程。</p><p>示例包括：在网页系统中按固定条件导出材料清单、在 PDF 软件中批量生成书签、在表格软件中套用固定格式、在项目管理系统中按固定字段生成任务清单。录制前应关闭无关窗口、使用测试数据或脱敏数据，并明确哪些步骤需要人工审批。</p><h3>（四）从团队 SOP、模板和交付前复核清单生成 Skill</h3><p>律所或团队已有的合同审阅清单、尽调报告模板、证据目录模板、问询函回复流程、底稿命名规范，均可转化为 Skill。此类 Skill 的优势是能够统一团队标准，减少初级成员反复询问和 AI 输出口径不一致。</p></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>58 / 79</span></footer>
+  </div>
+</section>
+<section class="slide content-slide" data-index="59" aria-label="第 59 页：二、制作 Skill 的几种方式（3）">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">第五章 Skill、MCP/Connector 与 Plugin 的适用边界</p>
+      <h2>二、制作 Skill 的几种方式（3）</h2>
+    </header>
+    <div class="slide-body"><h3>（五）从失败案例和返工记录中反向生成 Skill</h3><p>最有价值的 Skill 往往来自返工记录。例如模型曾经混淆主体、遗漏来源、擅自修改商业条款、引用旧版材料、过度承诺法律结论。可以把这些错误固化为 Skill 的“禁止事项”和“交付前检查项”。</p></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>59 / 79</span></footer>
+  </div>
+</section>
+<section class="slide table-slide" data-index="60" aria-label="第 60 页：表5-2：不适合用 Skill 的场景">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">三、哪些场景不适合用 Skill</p>
+      <h2>表5-2：不适合用 Skill 的场景</h2>
+    </header>
+    <div class="slide-body"><p class="table-caption">表5-2：不适合用 Skill 的场景</p><div class="table-wrap"><table class="data-table dense"><thead><tr><th>场景</th><th>原因</th></tr></thead><tbody><tr><td>一次性、低重复任务</td><td>制作和维护 Skill 的成本高于收益</td></tr><tr><td>事实高度独特、判断强依赖律师策略</td><td>固定流程容易掩盖个案差异</td></tr><tr><td>需要实时法律检索或企业尽调</td><td>Skill 不能替代最新法规、案例和工商信息核验</td></tr><tr><td>客户秘密无法脱敏</td><td>不宜把敏感事实写入长期可复用流程</td></tr><tr><td>流程尚未稳定，经常变化</td><td>过早固化会导致错误流程被重复使用</td></tr><tr><td>最终法律意见、胜败概率定案、交易底线判断</td><td>必须由律师基于核验事实和法律依据作出</td></tr><tr><td>需要大量外部系统权限且风险动作多</td><td>优先用受控 MCP/Connector 和人工审批，而不是单纯 Skill</td></tr></tbody></table></div></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>60 / 79</span></footer>
+  </div>
+</section>
+<section class="slide content-slide" data-index="61" aria-label="第 61 页：四、MCP/Connector：需要外部数据或系统权限时使用">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">第五章 Skill、MCP/Connector 与 Plugin 的适用边界</p>
+      <h2>四、MCP/Connector：需要外部数据或系统权限时使用</h2>
+    </header>
+    <div class="slide-body"><p>MCP/Connector 适合需要接入外部数据或系统的任务，例如法规库、案例库、企查查、Google Drive、SharePoint、Gmail、Outlook、本地文件系统、Excel 工具、项目管理系统。其核心不是“更聪明”，而是“能访问权威数据或执行受控动作”。</p><p>律师使用 MCP/Connector 的权限原则是：默认只读；只连接项目文件夹；不连接整个律所云盘或邮箱；涉及发送、删除、覆盖、移动、提交等动作必须人工确认；任务结束后撤销无关授权。</p></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>61 / 79</span></footer>
+  </div>
+</section>
+<section class="slide content-slide" data-index="62" aria-label="第 62 页：五、Plugin：团队级打包场景，个人日常不必优先">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">第五章 Skill、MCP/Connector 与 Plugin 的适用边界</p>
+      <h2>五、Plugin：团队级打包场景，个人日常不必优先</h2>
+    </header>
+    <div class="slide-body"><p>Plugin 的价值在于把多个 Skill、Connector、子代理、检查规则打包成团队或业务线工作流。对于个人律师的单次合同审阅、一次性证据目录、普通法律备忘录，通常不需要专门使用 Plugin。</p><p>当团队希望统一“IPO 尽调工作流包”“诉讼证据整理工作流包”“合同审阅工作流包”时，可以考虑 Plugin。此时应由团队统一维护版本、权限、使用说明和复核清单。</p></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>62 / 79</span></footer>
+  </div>
+</section>
+<section class="slide chapter-slide" data-index="63" aria-label="第 63 页：第六章 客户秘密保护：控制上传、脱敏、隐私模式与定期清理">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">章节</p>
+      <h2>第六章 客户秘密保护：控制上传、脱敏、隐私模式与定期清理</h2>
+    </header>
+    <div class="slide-body"><div class="chapter-layout"><div class="chapter-mark">Chapter</div><ul><li>一、关闭模型训练或改进功能</li><li>二、商业秘密和高敏材料：不上传，或彻底脱敏后上传</li><li>三、隐私模式和项目清理</li><li>四、国家秘密和涉密事项：不得使用在线大模型</li><li>五、连接器和插件权限：只读、单项目、需确认</li></ul></div></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>63 / 79</span></footer>
+  </div>
+</section>
+<section class="slide content-slide" data-index="64" aria-label="第 64 页：第六章 客户秘密保护：控制上传、脱敏、隐私模式与定期清理">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">第六章 客户秘密保护：控制上传、脱敏、隐私模式与定期清理</p>
+      <h2>第六章 客户秘密保护：控制上传、脱敏、隐私模式与定期清理</h2>
+    </header>
+    <div class="slide-body"><p>客户秘密保护不应被理解为“某个平台是否用于训练”这一单一问题。律师使用在线大模型和 Agent 时，应同时控制输入材料、模型训练设置、隐私模式、项目留存、连接器权限和后续清理。基本原则是：能不上传就不上传，必须上传则最小化，涉及商业秘密应彻底脱敏，涉及国家秘密不得使用在线大模型。</p></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>64 / 79</span></footer>
+  </div>
+</section>
+<section class="slide content-slide" data-index="65" aria-label="第 65 页：一、关闭模型训练或改进功能">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">第六章 客户秘密保护：控制上传、脱敏、隐私模式与定期清理</p>
+      <h2>一、关闭模型训练或改进功能</h2>
+    </header>
+    <div class="slide-body"><p>在账号设置允许的情况下，应关闭“用于模型训练/模型改进”的选项。团队或企业账号应由管理员统一配置，并明确哪些空间可以处理客户材料，哪些空间只用于公开资料和通用模板。关闭训练并不等于没有留存，也不等于没有权限风险，因此仍需控制上传范围和项目留存。</p></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>65 / 79</span></footer>
+  </div>
+</section>
+<section class="slide content-slide" data-index="66" aria-label="第 66 页：二、商业秘密和高敏材料：不上传，或彻底脱敏后上传">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">第六章 客户秘密保护：控制上传、脱敏、隐私模式与定期清理</p>
+      <h2>二、商业秘密和高敏材料：不上传，或彻底脱敏后上传</h2>
+    </header>
+    <div class="slide-body"><p>涉及客户名单、交易底线、未公开融资并购、诉讼策略、核心技术、财务明细、银行流水、内部邮件、问询函核心口径等商业秘密或高敏材料，原则上不应上传在线大模型。确需使用时，应先转化为已脱敏的事实摘要，并删除可识别客户、相对方、个人、项目、金额、日期、文件编号、签章页等信息。</p><p>脱敏不是简单把客户名称改成“A 公司”。如果时间线、金额、股权比例、产品名称、法院案号或对方名称组合后仍能反推真实项目，也应进一步泛化处理。无法充分脱敏的材料，不应交给在线模型处理。</p></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>66 / 79</span></footer>
+  </div>
+</section>
+<section class="slide content-slide" data-index="67" aria-label="第 67 页：三、隐私模式和项目清理">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">第六章 客户秘密保护：控制上传、脱敏、隐私模式与定期清理</p>
+      <h2>三、隐私模式和项目清理</h2>
+    </header>
+    <div class="slide-body"><p>敏感但已经脱敏的临时分析，可优先使用隐私模式、临时聊天或不进入长期记忆/项目知识库的方式处理。任务结束后，应定期清理对话、项目文件和上传材料；不把客户底稿、证据原件、交易底线、诉讼策略长期留在项目知识库或 Agent 记忆中。</p></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>67 / 79</span></footer>
+  </div>
+</section>
+<section class="slide content-slide" data-index="68" aria-label="第 68 页：四、国家秘密和涉密事项：不得使用在线大模型">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">第六章 客户秘密保护：控制上传、脱敏、隐私模式与定期清理</p>
+      <h2>四、国家秘密和涉密事项：不得使用在线大模型</h2>
+    </header>
+    <div class="slide-body"><p>涉及国家秘密、工作秘密、涉密项目、客户明确禁止外部 AI 处理的资料，不得上传或输入在线大模型。此类事项不适用“脱敏后试试看”的思路，除非已在经批准的本地化、私有化、涉密合规环境中处理，并符合相关制度要求。</p></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>68 / 79</span></footer>
+  </div>
+</section>
+<section class="slide content-slide" data-index="69" aria-label="第 69 页：五、连接器和插件权限：只读、单项目、需确认">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">第六章 客户秘密保护：控制上传、脱敏、隐私模式与定期清理</p>
+      <h2>五、连接器和插件权限：只读、单项目、需确认</h2>
+    </header>
+    <div class="slide-body"><p>连接器、Chrome 插件、Computer Use 的保密风险通常高于单次复制粘贴。因为它们可能让 Agent 接触云盘、邮箱、本地文件和网页登录状态。律师使用时应遵守三条控制线：默认只读，按单项目授权，所有发送、提交、删除、覆盖、移动动作都需要人工确认。</p></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>69 / 79</span></footer>
+  </div>
+</section>
+<section class="slide table-slide" data-index="70" aria-label="第 70 页：表6-1：客户秘密控制简表">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">五、连接器和插件权限：只读、单项目、需确认</p>
+      <h2>表6-1：客户秘密控制简表</h2>
+    </header>
+    <div class="slide-body"><p class="table-caption">表6-1：客户秘密控制简表</p><div class="table-wrap"><table class="data-table"><thead><tr><th>场景</th><th>建议做法</th></tr></thead><tbody><tr><td>公开资料、通用模板、公开法规案例</td><td>可正常使用，仍需核验法律依据有效性</td></tr><tr><td>普通客户材料</td><td>优先脱敏后使用，限定材料范围和输出用途</td></tr><tr><td>商业秘密、高敏交易/诉讼材料</td><td>原则上不上传；必须处理时使用彻底脱敏摘要</td></tr><tr><td>国家秘密、涉密事项、客户明令禁止事项</td><td>不得使用在线大模型</td></tr><tr><td>连接器/插件/Computer Use</td><td>只读、单项目、人工确认外发和修改动作</td></tr><tr><td>任务结束后</td><td>清理对话、项目知识库、上传文件和临时输出</td></tr></tbody></table></div></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>70 / 79</span></footer>
+  </div>
+</section>
+<section class="slide chapter-slide" data-index="71" aria-label="第 71 页：第七章 团队落地与进阶操作：Codex 与普通 ChatGPT 文档处理的区别及 /plan、/goal 切换">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">章节</p>
+      <h2>第七章 团队落地与进阶操作：Codex 与普通 ChatGPT 文档处理的区别及 /plan、/goal 切换</h2>
+    </header>
+    <div class="slide-body"><div class="chapter-layout"><div class="chapter-mark">Chapter</div><ul><li>一、Codex 与普通 ChatGPT 文档处理的区别</li><li>二、普通任务、/plan、/goal 的切换逻辑</li><li>三、团队落地建议</li></ul></div></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>71 / 79</span></footer>
+  </div>
+</section>
+<section class="slide content-slide" data-index="72" aria-label="第 72 页：一、Codex 与普通 ChatGPT 文档处理的区别">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">第七章 团队落地与进阶操作：Codex 与普通 ChatGPT 文档处理的区别及 /plan、/goal 切换</p>
+      <h2>一、Codex 与普通 ChatGPT 文档处理的区别</h2>
+    </header>
+    <div class="slide-body"><p>普通 ChatGPT 更像“对话式法律助理”：适合问答、单文档审阅、文本起草、润色、解释和思路梳理。Codex 更像“带文件系统和执行能力的工作台”：适合多文件处理、批量生成交付物、运行脚本、读写本地项目、调用浏览器或桌面应用、检查 diff 和形成多个版本文件。</p></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>72 / 79</span></footer>
+  </div>
+</section>
+<section class="slide table-slide" data-index="73" aria-label="第 73 页：表7-1：Codex 与普通 ChatGPT 的文档处理差异">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">一、Codex 与普通 ChatGPT 文档处理的区别</p>
+      <h2>表7-1：Codex 与普通 ChatGPT 的文档处理差异</h2>
+    </header>
+    <div class="slide-body"><p class="table-caption">表7-1：Codex 与普通 ChatGPT 的文档处理差异</p><div class="table-wrap"><table class="data-table dense"><thead><tr><th>维度</th><th>普通 ChatGPT</th><th>Codex</th></tr></thead><tbody><tr><td>输入方式</td><td>上传文件或粘贴文本，以对话理解为主</td><td>读取工作区文件夹、项目文件、终端、脚本、插件和浏览器</td></tr><tr><td>适合任务</td><td>单份合同审阅、条款润色、法律备忘录框架、解释分析</td><td>多文件底稿整理、批量重命名、生成 Word/Excel、比较版本、自动化流程</td></tr><tr><td>输出形态</td><td>答案、表格、草稿、单个文件</td><td>多个文件、目录结构、脚本、日志、diff、可重复工作流</td></tr><tr><td>优势</td><td>交互快，适合推理和表达</td><td>能执行、能读写、能自动化、能处理复杂项目结构</td></tr><tr><td>风险</td><td>幻觉、遗漏、上下文污染</td><td>误改文件、权限过宽、自动化动作风险、工作区泄密</td></tr><tr><td>律师建议</td><td>用于分析和文字质量提升</td><td>用于文件工程和受控自动化，关键结论仍由律师复核</td></tr></tbody></table></div></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>73 / 79</span></footer>
+  </div>
+</section>
+<section class="slide content-slide" data-index="74" aria-label="第 74 页：二、普通任务、/plan、/goal 的切换逻辑">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">第七章 团队落地与进阶操作：Codex 与普通 ChatGPT 文档处理的区别及 /plan、/goal 切换</p>
+      <h2>二、普通任务、/plan、/goal 的切换逻辑</h2>
+    </header>
+    <div class="slide-body"><p>Codex 中不应所有任务都使用 /goal。三种模式的判断标准如下：普通任务用于边界清楚、一次即可完成的事项；/plan 用于复杂或不确定任务，在执行前先验证 AI 的理解；/goal 用于多步骤、长时间、需要持续检查完成标准的任务。</p></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>74 / 79</span></footer>
+  </div>
+</section>
+<section class="slide table-slide" data-index="75" aria-label="第 75 页：表7-2：普通任务、/plan、/goal 的使用边界">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">二、普通任务、/plan、/goal 的切换逻辑</p>
+      <h2>表7-2：普通任务、/plan、/goal 的使用边界</h2>
+    </header>
+    <div class="slide-body"><p class="table-caption">表7-2：普通任务、/plan、/goal 的使用边界</p><div class="table-wrap"><table class="data-table dense"><thead><tr><th>模式</th><th>适用场景</th><th>律师提示词重点</th></tr></thead><tbody><tr><td>普通任务</td><td>单次修改、解释、摘要、生成一个小文件、回答一个明确问题</td><td>说明输入、输出格式、禁止事项即可</td></tr><tr><td>/plan</td><td>任务复杂、材料多、目标不完全清楚、担心 AI 误解</td><td>先不执行；列计划、材料范围、步骤、输出物、需确认事项</td></tr><tr><td>/goal</td><td>多步骤长任务、需要多个交付物、需要持续推进和自检</td><td>写明目标、范围、禁止事项、验收标准、停止规则</td></tr></tbody></table></div></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>75 / 79</span></footer>
+  </div>
+</section>
+<section class="slide content-slide" data-index="76" aria-label="第 76 页：二、普通任务、/plan、/goal 的切换逻辑（2）">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">第七章 团队落地与进阶操作：Codex 与普通 ChatGPT 文档处理的区别及 /plan、/goal 切换</p>
+      <h2>二、普通任务、/plan、/goal 的切换逻辑（2）</h2>
+    </header>
+    <div class="slide-body"><h3>（一）普通任务：边界清楚，直接执行</h3><p>例如：“请把这份合同审阅意见整理成表格，字段为条款编号、风险说明、修改建议、是否需客户确认。”这类任务不需要 /goal。</p><h3>（二）/plan：先看计划，再决定是否执行</h3><p>例如整理一个含 200 份底稿的尽调文件夹时，应先输入 /plan，让 Codex 说明拟如何扫描文件、如何生成索引、如何避免覆盖原件、输出哪些表格、遇到无法读取文件如何处理。律师确认计划后，再让其执行。</p><h3>（三）/goal：明确目标和停止条件后持续推进</h3><p>当任务需要多个阶段、多个文件、反复检查并形成完整交付物时，再使用 /goal。Goal 必须写清楚何时停止。不要使用“持续优化”“尽量完善”这类无边界表述，否则 Agent 容易漂移。</p><h3>（四）切换路径</h3><p>推荐路径是：先用普通对话描述目标；如任务复杂，进入 /plan；计划确认后，如果只是几个明确步骤，让 Codex 按计划执行即可；如果是长任务或需要持续自检，再把计划改写成 /goal。任务完成后，应清除或结束 Goal，避免后续无关指令仍受旧目标影响。</p></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>76 / 79</span></footer>
+  </div>
+</section>
+<section class="slide content-slide" data-index="77" aria-label="第 77 页：三、团队落地建议">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">第七章 团队落地与进阶操作：Codex 与普通 ChatGPT 文档处理的区别及 /plan、/goal 切换</p>
+      <h2>三、团队落地建议</h2>
+    </header>
+    <div class="slide-body"><ul class="slide-list"><li>建立“AI 使用前检查清单”：材料是否可上传、是否脱敏、是否需要关闭训练、是否涉及涉密事项。</li></ul><ul class="slide-list"><li>建立“任务分流规则”：ChatGPT/Claude 处理文本分析，Codex 处理文件工程和自动化，MCP/Connector 处理外部权威数据。</li></ul><ul class="slide-list"><li>建立“项目命名和输出规则”：原始文件只读保存，生成文件进入 output 文件夹，版本号和日期清晰。</li></ul><ul class="slide-list"><li>建立“交付前复核清单”：事实来源、法律依据、主体名称、金额日期、客户立场、保密信息、格式、可外发性逐项检查。</li></ul><ul class="slide-list"><li>建立“成功对话复用机制”：把高质量提示词、Skill、计划模板和复核清单沉淀到团队知识库。</li></ul></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>77 / 79</span></footer>
+  </div>
+</section>
+<section class="slide table-slide" data-index="78" aria-label="第 78 页：表7-3：交付前复核清单">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">三、团队落地建议</p>
+      <h2>表7-3：交付前复核清单</h2>
+    </header>
+    <div class="slide-body"><p class="table-caption">表7-3：交付前复核清单</p><div class="table-wrap"><table class="data-table dense"><thead><tr><th>检查项</th><th>复核问题</th></tr></thead><tbody><tr><td>事实来源</td><td>每个事实点是否能回溯到文件、证据或客户确认？</td></tr><tr><td>法律依据</td><td>法规、司法解释、案例、监管规则是否现行有效并经过核验？</td></tr><tr><td>客户立场</td><td>是否站在我方客户利益出发，是否误写相对方立场？</td></tr><tr><td>保密信息</td><td>是否含客户名称、交易底线、个人信息、商业秘密或涉密内容？</td></tr><tr><td>商业条款</td><td>是否未经要求擅自修改价格、付款、交易结构等商业条件？</td></tr><tr><td>输出格式</td><td>是否符合 Word/Excel/PPT 格式要求，是否可直接审阅？</td></tr><tr><td>版本管理</td><td>是否保留原件，生成文件是否另存，是否有修改说明？</td></tr></tbody></table></div></div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>78 / 79</span></footer>
+  </div>
+</section>
+<section class="slide closing-slide" data-index="79" aria-label="第 79 页：落地提醒">
+  <div class="slide-inner">
+    <header class="slide-head">
+      <p class="kicker">结束页</p>
+      <h2>落地提醒</h2>
+    </header>
+    <div class="slide-body">
+<div class="closing-grid">
+  <article><strong>先分级</strong><span>任务、资料、权限、模型都要分级。</span></article>
+  <article><strong>先计划</strong><span>复杂事项先看 AI 的计划，再允许执行。</span></article>
+  <article><strong>先隔离</strong><span>单客户、单项目、单交付物，减少上下文污染。</span></article>
+  <article><strong>再复核</strong><span>事实、法条、权限动作和对外口径必须人工确认。</span></article>
+</div>
+</div>
+    <footer class="slide-foot"><span>李成律师法律AI工作站</span><span>79 / 79</span></footer>
+  </div>
+</section></div>
+  </main>
+  <aside class="deck-nav" aria-label="翻页控制">
+    <button id="prev" type="button">上一页</button>
+    <span class="counter" id="counter">01 / 79</span>
+    <button id="next" type="button">下一页</button>
+  </aside>
+  <p class="help">键盘：← / → 翻页，空格下一页，O 打开概览，Esc 关闭概览。</p>
+  <section class="overview-panel" id="overview" aria-label="页面概览">
+    <h2>页面概览</h2>
+    <div class="overview-grid"><button type="button" data-jump="0"><span>01</span>智能体指令体系、工具选择培训讲义</button><button type="button" data-jump="1"><span>02</span>目录</button><button type="button" data-jump="2"><span>03</span>律师团队使用 Agent 的四个控制面</button><button type="button" data-jump="3"><span>04</span>第一章 基础概念：大模型、Agent 与主流工具形态</button><button type="button" data-jump="4"><span>05</span>第一章 基础概念：大模型、Agent 与主流工具形态</button><button type="button" data-jump="5"><span>06</span>一、大模型是什么：先理解“能力底座”</button><button type="button" data-jump="6"><span>07</span>表1-1：大模型的常见分类维度</button><button type="button" data-jump="7"><span>08</span>二、同一个大模型为什么会有不同版本</button><button type="button" data-jump="8"><span>09</span>表1-2：模型版本对法律工作的影响</button><button type="button" data-jump="9"><span>10</span>三、推理模型与非推理模型的区别</button><button type="button" data-jump="10"><span>11</span>四、文本大模型与多模态大模型的区别</button><button type="button" data-jump="11"><span>12</span>五、目前常见的境外和境内大模型</button><button type="button" data-jump="12"><span>13</span>表1-3：常见大模型品牌示例</button><button type="button" data-jump="13"><span>14</span>六、大模型的主要使用方式：网页、CLI 与 App</button><button type="button" data-jump="14"><span>15</span>表1-4：网页、CLI、App 三类入口的区别</button><button type="button" data-jump="15"><span>16</span>七、主流境外与境内 Agent 工具示例</button><button type="button" data-jump="16"><span>17</span>表1-5：常见 Agent 工具示例</button><button type="button" data-jump="17"><span>18</span>七、主流境外与境内 Agent 工具示例（2）</button><button type="button" data-jump="18"><span>19</span>八、OpenClaw 与上述 Agent 的区别，以及律师为什么通常用不上</button><button type="button" data-jump="19"><span>20</span>九、大模型与 Agent 的核心区别</button><button type="button" data-jump="20"><span>21</span>表1-6：大模型与 Agent 的核心区别</button><button type="button" data-jump="21"><span>22</span>九、大模型与 Agent 的核心区别（2）</button><button type="button" data-jump="22"><span>23</span>第二章 总体框架：律师如何理解 Agent 工具体系</button><button type="button" data-jump="23"><span>24</span>第二章 总体框架：律师如何理解 Agent 工具体系</button><button type="button" data-jump="24"><span>25</span>表2-1：律师使用 Agent 的七层工作框架</button><button type="button" data-jump="25"><span>26</span>一、基本原则</button><button type="button" data-jump="26"><span>27</span>二、不同工具的分工</button><button type="button" data-jump="27"><span>28</span>表2-2：律师任务分流建议</button><button type="button" data-jump="28"><span>29</span>第三章 智能体指令体系与对话管理：全局指令、项目指令、对话提示词与模型选择</button><button type="button" data-jump="29"><span>30</span>第三章 智能体指令体系与对话管理：全局指令、项目指令、对话提示词与模型选择</button><button type="button" data-jump="30"><span>31</span>一、全局指令：只放长期稳定规则</button><button type="button" data-jump="31"><span>32</span>二、项目指令：按业务线或项目建立工作区</button><button type="button" data-jump="32"><span>33</span>表3-1：项目指令的适用边界</button><button type="button" data-jump="33"><span>34</span>三、对话提示词：本次任务的交付标准</button><button type="button" data-jump="34"><span>35</span>表3-2：对话提示词的七要素与三控制</button><button type="button" data-jump="35"><span>36</span>四、对话管理技巧：单专项任务、上下文隔离、计划模式与提示词迭代</button><button type="button" data-jump="36"><span>37</span>四、对话管理技巧：单专项任务、上下文隔离、计划模式与提示词迭代（2）</button><button type="button" data-jump="37"><span>38</span>四、对话管理技巧：单专项任务、上下文隔离、计划模式与提示词迭代（3）</button><button type="button" data-jump="38"><span>39</span>表3-3：模型选择建议</button><button type="button" data-jump="39"><span>40</span>第四章 Codex 工具：Goal、Chrome、Computer Use、手机版与 Record &amp; Replay</button><button type="button" data-jump="40"><span>41</span>第四章 Codex 工具：Goal、Chrome、Computer Use、手机版与 Record &amp; Replay</button><button type="button" data-jump="41"><span>42</span>一、Codex Goal：复杂任务的目标与验收标准</button><button type="button" data-jump="42"><span>43</span>表4-1：Codex Goal 必备要素</button><button type="button" data-jump="43"><span>44</span>一、Codex Goal：复杂任务的目标与验收标准（2）</button><button type="button" data-jump="44"><span>45</span>二、Codex Chrome 插件：用于登录态网页，但必须严控授权</button><button type="button" data-jump="45"><span>46</span>表4-2：Chrome 插件的律师使用边界</button><button type="button" data-jump="46"><span>47</span>二、Codex Chrome 插件：用于登录态网页，但必须严控授权（2）</button><button type="button" data-jump="47"><span>48</span>三、Computer Use：图形界面操作要比命令行更谨慎</button><button type="button" data-jump="48"><span>49</span>四、手机版 Codex：不是手机本地执行，而是远程控制已连接主机</button><button type="button" data-jump="49"><span>50</span>表4-3：手机版 Codex 的使用边界</button><button type="button" data-jump="50"><span>51</span>五、Record &amp; Replay：把“可演示的重复流程”转成 Skill</button><button type="button" data-jump="51"><span>52</span>表4-4：Record &amp; Replay 适合沉淀的律师流程</button><button type="button" data-jump="52"><span>53</span>第五章 Skill、MCP/Connector 与 Plugin 的适用边界</button><button type="button" data-jump="53"><span>54</span>第五章 Skill、MCP/Connector 与 Plugin 的适用边界</button><button type="button" data-jump="54"><span>55</span>一、什么情况下用 Skill</button><button type="button" data-jump="55"><span>56</span>表5-1：适合做成 Skill 的法律工作</button><button type="button" data-jump="56"><span>57</span>二、制作 Skill 的几种方式</button><button type="button" data-jump="57"><span>58</span>二、制作 Skill 的几种方式（2）</button><button type="button" data-jump="58"><span>59</span>二、制作 Skill 的几种方式（3）</button><button type="button" data-jump="59"><span>60</span>表5-2：不适合用 Skill 的场景</button><button type="button" data-jump="60"><span>61</span>四、MCP/Connector：需要外部数据或系统权限时使用</button><button type="button" data-jump="61"><span>62</span>五、Plugin：团队级打包场景，个人日常不必优先</button><button type="button" data-jump="62"><span>63</span>第六章 客户秘密保护：控制上传、脱敏、隐私模式与定期清理</button><button type="button" data-jump="63"><span>64</span>第六章 客户秘密保护：控制上传、脱敏、隐私模式与定期清理</button><button type="button" data-jump="64"><span>65</span>一、关闭模型训练或改进功能</button><button type="button" data-jump="65"><span>66</span>二、商业秘密和高敏材料：不上传，或彻底脱敏后上传</button><button type="button" data-jump="66"><span>67</span>三、隐私模式和项目清理</button><button type="button" data-jump="67"><span>68</span>四、国家秘密和涉密事项：不得使用在线大模型</button><button type="button" data-jump="68"><span>69</span>五、连接器和插件权限：只读、单项目、需确认</button><button type="button" data-jump="69"><span>70</span>表6-1：客户秘密控制简表</button><button type="button" data-jump="70"><span>71</span>第七章 团队落地与进阶操作：Codex 与普通 ChatGPT 文档处理的区别及 /plan、/goal 切换</button><button type="button" data-jump="71"><span>72</span>一、Codex 与普通 ChatGPT 文档处理的区别</button><button type="button" data-jump="72"><span>73</span>表7-1：Codex 与普通 ChatGPT 的文档处理差异</button><button type="button" data-jump="73"><span>74</span>二、普通任务、/plan、/goal 的切换逻辑</button><button type="button" data-jump="74"><span>75</span>表7-2：普通任务、/plan、/goal 的使用边界</button><button type="button" data-jump="75"><span>76</span>二、普通任务、/plan、/goal 的切换逻辑（2）</button><button type="button" data-jump="76"><span>77</span>三、团队落地建议</button><button type="button" data-jump="77"><span>78</span>表7-3：交付前复核清单</button><button type="button" data-jump="78"><span>79</span>落地提醒</button></div>
+  </section>
+  <script>
+const slides=Array.from(document.querySelectorAll('.slide'));const counter=document.querySelector('#counter');const progress=document.querySelector('#progress span');const overview=document.querySelector('#overview');let current=0;let touchStartX=0;function clamp(index){return Math.max(0,Math.min(slides.length-1,index))}function show(index){current=clamp(index);slides.forEach((slide,i)=>slide.classList.toggle('active',i===current));counter.textContent=`${String(current+1).padStart(2,'0')} / ${String(slides.length).padStart(2,'0')}`;progress.style.width=`${((current+1)/slides.length)*100}%`;location.hash=`slide-${current+1}`}function next(){show(current+1)}function prev(){show(current-1)}document.querySelector('#next').addEventListener('click',next);document.querySelector('#prev').addEventListener('click',prev);document.querySelector('#fullscreen').addEventListener('click',()=>{if(!document.fullscreenElement)document.documentElement.requestFullscreen?.();else document.exitFullscreen?.()});document.querySelector('#overview-toggle').addEventListener('click',()=>overview.classList.toggle('open'));document.querySelectorAll('[data-jump]').forEach(button=>{button.addEventListener('click',()=>{overview.classList.remove('open');show(Number(button.dataset.jump||0))})});document.addEventListener('keydown',event=>{if(event.key==='ArrowRight'||event.key==='PageDown'||event.key===' '){event.preventDefault();next()}if(event.key==='ArrowLeft'||event.key==='PageUp'){event.preventDefault();prev()}if(event.key==='Home')show(0);if(event.key==='End')show(slides.length-1);if(event.key.toLowerCase()==='o')overview.classList.toggle('open');if(event.key==='Escape')overview.classList.remove('open')});document.addEventListener('touchstart',event=>{touchStartX=event.changedTouches[0].screenX},{passive:true});document.addEventListener('touchend',event=>{const delta=event.changedTouches[0].screenX-touchStartX;if(Math.abs(delta)>48)delta<0?next():prev()},{passive:true});const hashMatch=location.hash.match(/slide-(\d+)/);show(hashMatch?Number(hashMatch[1])-1:0);
+</script>
+</body>
+</html>

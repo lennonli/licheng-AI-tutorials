@@ -9,6 +9,7 @@
 3. [梯子使用全教程：macOS、Windows、Android、iOS](docs/proxy-clash-verge-full-guide-ABL-20260707-V1.md)
 4. [Claude App 与 Codex App 通过 CC Switch 接入国产大模型教程](docs/claude-codex-app-ccswitch-domestic-models-ABL-20260707-V1.md)
 5. [macOS Codex 跳过登录页面教程（使用第三方模型）](docs/macos-codex-skip-login-third-party-models-ABL-20260708-V1.md)
+6. [智能体指令体系、工具选择培训讲义（HTML 翻页版）](docs/agent-instruction-tool-selection-training-ABL-20260708-V1.html)
 
 ## 附加版本
 
@@ -18,6 +19,7 @@
 
 | 日期 | 文件 | 更新内容 |
 | --- | --- | --- |
+| 2026-07-08 | [智能体指令体系、工具选择培训讲义（HTML 翻页版）](docs/agent-instruction-tool-selection-training-ABL-20260708-V1.html) | 新增面向律师团队的 AI Agent 培训讲义翻页版，覆盖大模型与 Agent 区分、指令体系、Codex 工具、Skill/MCP/Plugin、客户秘密保护和团队落地。 |
 | 2026-07-08 | [macOS Codex 跳过登录页面教程（使用第三方模型）](docs/macos-codex-skip-login-third-party-models-ABL-20260708-V1.md) | 新增使用第三方模型时跳过 Codex 登录页的 macOS 操作教程，包含配置原因、备份修改步骤、验证方式、常见排错和一键脚本。 |
 
 ## 说明
