@@ -12,6 +12,7 @@
 6. [智能体指令体系、工具选择培训讲义（HTML 翻页版）](docs/agent-instruction-tool-selection-training-ABL-20260708-V1.html)
 7. [法律工作如何选择 AI 智能体（2026年7月）](docs/legal-ai-agent-selection-202607-ABL-20260708-V1.md)
 8. [新建 VPS 后 OpenCode 安装与远程 Web UI 配置教程](docs/new-vps-opencode-web-ui-setup-ABL-20260709-V1.md)
+9. [法律业务 Skill 制作教程：两种主要方案](docs/legal-business-skill-creation-guide-ABL-20260710-V1.md)
 
 ## 附加版本
 
@@ -21,6 +22,7 @@
 
 | 日期 | 文件 | 更新内容 |
 | --- | --- | --- |
+| 2026-07-10 | [法律业务 Skill 制作教程：两种主要方案](docs/legal-business-skill-creation-guide-ABL-20260710-V1.md) | 新增法律业务 Skill 制作教程，分别说明对话内完整跑通流程后总结生成 Skill、使用 Record & Replay 录制外部应用工作流后生成 Skill 两种方案，并补充适用边界、测试方法和质量标准。 |
 | 2026-07-10 | [智能体指令体系、工具选择培训讲义（HTML 翻页版）](docs/agent-instruction-tool-selection-training-ABL-20260708-V1.html) | 完善概览弹层的无障碍语义与焦点管理，避免在按钮、输入框等交互元素上误触翻页快捷键；使用无历史污染的页码定位，并支持减少动态效果偏好。 |
 | 2026-07-10 | [梯子使用全教程 HTML 自包含版](docs/proxy-clash-verge-full-guide-ABL-20260707-V2.html) | 增加移动端响应式内边距、字号、表格和代码块横向滚动规则，避免窄屏正文被过度压缩。 |
 | 2026-07-10 | [新建 VPS 后 OpenCode 安装与远程 Web UI 配置教程](docs/new-vps-opencode-web-ui-setup-ABL-20260709-V1.md) | 将教程纳入统一教程仓库，补齐中文标题、章节结构、安全提示和可搜索正文。 |
