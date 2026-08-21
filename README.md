@@ -15,6 +15,7 @@
 9. [法律业务 Skill 制作教程：两种主要方案](docs/legal-business-skill-creation-guide-ABL-20260710-V1.md)
 10. [竞聘法律顾问·公司基本情况及法律问题初步分析报告提示词](docs/ipo-legal-advisor-company-profile-prompt-ABL-20260713-V1.md)
 11. [AI 智能体的记忆，到底记住了什么](docs/ai-agent-memory-comparison-ABL-20260821-V1.md)
+12. [AI 智能体对话管理实务教程](docs/ai-agent-conversation-management-ABL-20260821-V1.md)
 
 ## 附加版本
 
@@ -24,6 +25,7 @@
 
 | 日期 | 文件 | 更新内容 |
 | --- | --- | --- |
+| 2026-08-21 | [AI 智能体对话管理实务教程](docs/ai-agent-conversation-management-ABL-20260821-V1.md) | 新加以 Claude app、Codex app 图形界面为主的对话管理实务教程：上下文窗口机制、模型/思维强度/思考开关三旋钮、计划模式与目标模式、一对话一任务原则、消息编辑分支与文件隔离、分阶段推进与四要素提示词、上下文输入技巧、指令文件与记忆分层、Mac 路径与权限、本地与云端边界、并行自动化和跨工具接力，附一页速查表；入库时对正文中的客户名与案件当事人姓名作了脱敏。 |
 | 2026-08-21 | [AI 智能体的记忆，到底记住了什么](docs/ai-agent-memory-comparison-ABL-20260821-V1.md) | 新增 Claude、Codex、ZCode 三家智能体记忆机制对比文章：指令层与记忆层的分工、全局与项目 AGENTS.md 分层方法、自动记忆的内容边界、三家实现收敛的共同形状、记忆的四种代价，以及带保密义务的法律业务场景下的记忆管理建议。 |
 | 2026-07-13 | [竞聘法律顾问·公司基本情况及法律问题初步分析报告提示词](docs/ipo-legal-advisor-company-profile-prompt-ABL-20260713-V1.md) | 新增拟上市或拟挂牌企业法律顾问竞聘提示词，覆盖资料读取、公开信息核验、资本市场历史、法律风险分级、Word 报告结构、格式规范和可直接复用的完整提示词模板。 |
 | 2026-07-10 | [法律业务 Skill 制作教程：两种主要方案](docs/legal-business-skill-creation-guide-ABL-20260710-V1.md) | 新增法律业务 Skill 制作教程，分别说明对话内完整跑通流程后总结生成 Skill、使用 Record & Replay 录制外部应用工作流后生成 Skill 两种方案，并补充适用边界、测试方法和质量标准。 |
