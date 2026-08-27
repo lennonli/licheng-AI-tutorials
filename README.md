@@ -20,7 +20,17 @@
 14. [律师 MCP 搭建实用教程](docs/lawyer-mcp-setup-ABL-20260821-V1.md)
 15. [额度没了，赶紧换另一个有额度的 AI 续上我的任务](docs/ai-task-handoff-ABL-20260817-V1.md)
 16. [AI智能体智能调度工作教程](docs/ai-agent-dispatch-ABL-20260825-V1.md)
+16. [AI智能体智能调度工作教程](docs/ai-agent-dispatch-ABL-20260825-V1.md)
 17. [年度上市挂牌审核问询法律问题回溯提示词（冷启动可复现）](docs/listing-inquiry-annual-coldstart-prompt-ABL-20260827-V1.md)
+18. [诉讼证据整理与证据目录制作教程](docs/litigation-evidence-organization-ABL-20260827-V1.md)
+19. [起诉状、答辩状与上诉状起草教程](docs/litigation-pleadings-drafting-ABL-20260827-V1.md)
+20. [举证质证意见与代理词撰写教程](docs/litigation-evidence-arguments-ABL-20260827-V1.md)
+21. [庭审提纲、庭审提醒与诉讼归档教程](docs/litigation-trial-outline-archiving-ABL-20260827-V1.md)
+22. [AI 模拟法庭与庭审陪练教程](docs/litigation-moot-court-ABL-20260827-V1.md)
+23. [诉讼策略与案件评估教程](docs/litigation-strategy-assessment-ABL-20260827-V1.md)
+24. [强制执行与财产线索教程](docs/enforcement-asset-discovery-ABL-20260827-V1.md)
+25. [庭后复盘与裁判文书深读教程](docs/post-trial-review-ABL-20260827-V1.md)
+26. [AI 辅助调解与谈判教程](docs/mediation-negotiation-ABL-20260827-V1.md)
 
 ## 附加版本
 
@@ -30,6 +40,7 @@
 
 | 日期 | 文件 | 更新内容 |
 | --- | --- | --- |
+| 2026-08-27 | 诉讼实战系列教程（九篇） | 新增诉讼实战系列九篇 AI 教程：证据整理与证据目录、起诉状答辩状上诉状起草、举证质证意见与代理词、庭审提纲庭审提醒与归档、AI 模拟法庭与庭审陪练、诉讼策略与案件评估、强制执行与财产线索、庭后复盘与裁判文书深读、AI 辅助调解与谈判。各篇含标准工作流与可直接复制的提示词模板，通用化表述适配各类 AI 智能体，强调文书起草优先以律师提供的其他项目更优模板为基准调整完善，法条案号一律回库核验并标注【待核验】。 |
 | 2026-08-25 | [AI智能体智能调度工作教程](docs/ai-agent-dispatch-ABL-20260825-V1.md) | 新增 AI 智能体调度外部智能体（含高级分析模型）工作教程（docx 提示词版转 Markdown 入库）：调度原理、四类常用场景与可直接复制的提示词模板（审查对方修订并指定高级模型、制作清洁版定稿、指定模型或工具、检查调度链路可用性）、提示词写作五要素（背景/位置/要求/去向/特别指令）、结果四块内容的律师把关重点和故障直报式排障。 |
 | 2026-08-27 | [年度上市挂牌审核问询法律问题回溯提示词（冷启动可复现）](docs/listing-inquiry-annual-coldstart-prompt-ABL-20260827-V1.md) | 新增一整套可冷启动复现的年度回溯任务提示词：从东财公开接口建{YEAR}年A股五板块与新三板挂牌清单，双通道抓取沪深北交易所及股转官网的问询回复与补充法律意见书（含股转2025-08-02新旧审核系统切换的双接口参数和WAF串行纪律），按分公司模板提炼（20类法律主题强制成节、各板块篇幅下限、回复要点逐子问对应具体数据点），配 codex/内置子代理/agy/opencode 四档执行引擎优先级与队列化断点方案，最终聚合为年度报告并同步云端盘；入库时将 Google 云盘路径中的个人邮箱替换为 {GOOGLE_ACCOUNT} 占位符。 |
 | 2026-08-23 | [额度没了，赶紧换另一个有额度的 AI 续上我的任务](docs/ai-task-handoff-ABL-20260817-V1.md) | 新增跨 AI 任务接力短文（原稿 2026-08-17）：额度用尽时把未完成对话的本地文件路径交给另一家有额度的 AI 续做——三步操作（问出对话文件路径、贴给新 AI 续做、让新 AI 先当验收员复核旧 AI 的交付），附可直接照抄的验收指令、左右手互搏原理（不同家 AI 犯错路子不同、互查才查出真问题）和只给路径不贴内容、查改分开两条提醒。 |
