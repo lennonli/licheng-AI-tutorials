@@ -36,6 +36,7 @@
 30. [Mac 代理分流排查提示词（跨机器复用版）](docs/mac-proxy-troubleshooting-ABL-20260828-V1.md)
 31. [如何写一个规范的临时对话提示词](docs/temp-conversation-prompt-guide-ABL-20260830-V1.md)
 32. [别只装一个 AI Agent：我为什么把 OpenCode 当作“救援工具”](docs/opencode-rescue-agent-guide-ABL-20260830-V1.md)
+33. [做任何工作前，先问一句：这个事能用AI完成吗？](docs/ai-first-workflow-ABL-20260830-V1.md)
 
 ## 附加版本
 
@@ -45,6 +46,7 @@
 
 | 日期 | 文件 | 更新内容 |
 | --- | --- | --- |
+| 2026-08-30 | [做任何工作前，先问一句：这个事能用AI完成吗？](docs/ai-first-workflow-ABL-20260830-V1.md) | 新增"AI优先"工作习惯短文：核心原则是"不是AI万能，而是AI优先"——接到工作先判断AI能做到什么、人接手剩余部分，而非"自己做、不行再找AI"；分六节展开：律师信息处理类工作（合同审阅/法律研究/尽调/IPO问询/诉讼文书/行政杂务）应先想"AI能先做什么"；不要只把AI当聊天工具，Agent 可直接读文件夹、批量改 Word/Excel、跑脚本、调 MCP、接续他人任务（含坏了让另一个 Agent 排查）；AI优先不是AI包办，AI 做搜索整理初稿、人负责法律判断与对外责任的人机分工；第一次是任务第二次就应沉淀为清单/Skill/脚本/工作流；接到新任务先问五个问题（能否直接完成/先完成80%/直接处理原始文件/批量化/能否复用沉淀）；最终改变的是工作默认顺序——收到任务先判断AI能做什么、AI先执行、人审核判断决策。 |
 | 2026-08-30 | [别只装一个 AI Agent：我为什么把 OpenCode 当作“救援工具”](docs/opencode-rescue-agent-guide-ABL-20260830-V1.md) | 新增备用 Agent 思路短文：主力 Agent（Codex/Claude Code/ZCode）自身损坏时无 AI 可用的死锁问题，建议额外常备一个轻量 OpenCode 作"救援 Agent"，列明它可排查的八类问题（启动失败、API Key/环境变量、MCP 连接、配置文件、Node/Python/Docker 环境、端口冲突、网络代理 DNS、看日志修复），提出主备互查的双 Agent 体系（重要任务可一个改配置、另一个复核），并建议在 VPS 上也装一个 OpenCode 充当随时调用的 AI 运维助手（Docker/Nginx/Cloudflare Tunnel/Tailscale/磁盘/日志/部署 GitHub 项目九类场景），结论是不求最强、但求稳定的 AI 工具体系，一个干活一个救场。 |
 | 2026-08-30 | [如何写一个规范的临时对话提示词](docs/temp-conversation-prompt-guide-ABL-20260830-V1.md) | 新增临时对话提示词写作方法短文：已配置全局指令、Skill 和 MCP 的本地 Agent，临时提示词只需按"任务＋输入＋工作内容＋输出＋落地位置"五要素交代本次任务的变量，附可直接替换占位符整段复用的提示词模板；逐一说明输入材料写绝对路径、明确任务边界、指定交付格式、指定输出目录且不得覆盖原始文件、要求列明生成文件与待人工确认事项各要素解决什么问题，补充需要外部数据时"如需核验请调用某 MCP"的一句话写法，结论是全局指令管长期规则、Skill 管标准流程、MCP 管外部数据，临时提示词只负责说明这次具体做什么，越像工作指令、越不像提示词作文效率越高。 |
 | 2026-08-28 | [Mac 代理分流排查提示词（跨机器复用版）](docs/mac-proxy-troubleshooting-ABL-20260828-V1.md) | 新增 Mac 代理分流排查提示词（发给另一台 Mac 上的 AI 直接执行）：Tailscale MagicDNS 引发 DNS 污染的诊断与修复（fake-ip 判读表、国内 DoH 同样被投毒的原因）、Shadowrocket 劫持 tailnet 路由与 UDP 被 TUN 抓走两个路由冲突的诊断修复、hysteria2 优于 Tailscale exit node 的选型依据（高丢包链路 QUIC+BBR）、四组验收命令和排查纪律；入库时已将服务器公网 IP、tailnet IP、节点密码等真实凭证全部脱敏为占位符。 |
