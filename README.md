@@ -35,6 +35,7 @@
 29. [公司舆情与法律风险监控系统·从零搭建教程](docs/company-monitoring-agent-tutorial-ABL-20260827-V2.md)
 30. [Mac 代理分流排查提示词（跨机器复用版）](docs/mac-proxy-troubleshooting-ABL-20260828-V1.md)
 31. [如何写一个规范的临时对话提示词](docs/temp-conversation-prompt-guide-ABL-20260830-V1.md)
+32. [别只装一个 AI Agent：我为什么把 OpenCode 当作“救援工具”](docs/opencode-rescue-agent-guide-ABL-20260830-V1.md)
 
 ## 附加版本
 
@@ -44,6 +45,7 @@
 
 | 日期 | 文件 | 更新内容 |
 | --- | --- | --- |
+| 2026-08-30 | [别只装一个 AI Agent：我为什么把 OpenCode 当作“救援工具”](docs/opencode-rescue-agent-guide-ABL-20260830-V1.md) | 新增备用 Agent 思路短文：主力 Agent（Codex/Claude Code/ZCode）自身损坏时无 AI 可用的死锁问题，建议额外常备一个轻量 OpenCode 作"救援 Agent"，列明它可排查的八类问题（启动失败、API Key/环境变量、MCP 连接、配置文件、Node/Python/Docker 环境、端口冲突、网络代理 DNS、看日志修复），提出主备互查的双 Agent 体系（重要任务可一个改配置、另一个复核），并建议在 VPS 上也装一个 OpenCode 充当随时调用的 AI 运维助手（Docker/Nginx/Cloudflare Tunnel/Tailscale/磁盘/日志/部署 GitHub 项目九类场景），结论是不求最强、但求稳定的 AI 工具体系，一个干活一个救场。 |
 | 2026-08-30 | [如何写一个规范的临时对话提示词](docs/temp-conversation-prompt-guide-ABL-20260830-V1.md) | 新增临时对话提示词写作方法短文：已配置全局指令、Skill 和 MCP 的本地 Agent，临时提示词只需按"任务＋输入＋工作内容＋输出＋落地位置"五要素交代本次任务的变量，附可直接替换占位符整段复用的提示词模板；逐一说明输入材料写绝对路径、明确任务边界、指定交付格式、指定输出目录且不得覆盖原始文件、要求列明生成文件与待人工确认事项各要素解决什么问题，补充需要外部数据时"如需核验请调用某 MCP"的一句话写法，结论是全局指令管长期规则、Skill 管标准流程、MCP 管外部数据，临时提示词只负责说明这次具体做什么，越像工作指令、越不像提示词作文效率越高。 |
 | 2026-08-28 | [Mac 代理分流排查提示词（跨机器复用版）](docs/mac-proxy-troubleshooting-ABL-20260828-V1.md) | 新增 Mac 代理分流排查提示词（发给另一台 Mac 上的 AI 直接执行）：Tailscale MagicDNS 引发 DNS 污染的诊断与修复（fake-ip 判读表、国内 DoH 同样被投毒的原因）、Shadowrocket 劫持 tailnet 路由与 UDP 被 TUN 抓走两个路由冲突的诊断修复、hysteria2 优于 Tailscale exit node 的选型依据（高丢包链路 QUIC+BBR）、四组验收命令和排查纪律；入库时已将服务器公网 IP、tailnet IP、节点密码等真实凭证全部脱敏为占位符。 |
 | 2026-08-27 | [公司舆情与法律风险监控系统·从零搭建教程](docs/company-monitoring-agent-tutorial-ABL-20260827-V2.md) | 新增面向 AI Agent 的舆情与法律风险监控日报系统复刻教程：架构总览与四条铁律（MCP 拿数据、Skill 定规则、Cron 只触发；单任务遍历主体清单；Baseline 全量后只报增量；判断交给 LLM、记忆交给 SQLite）、数据源 A/B/B2/C 分档与第三方仓库选型纪律、十步每日 SOP 与红橙黄三级分级响应时限、SQLite 指纹去重引擎设计、微博移动端 API 等社媒三通道采集实现要点（含同域 CORS 修复等 14 条踩坑表，V2 新增小红书半自动通道（Agent-Reach/OpenCLI 桥接浏览器登录会话）接入教程与合规口径）、md 转 PDF 转 Drive 转邮件交付管线三脚本、Baseline 首日执行 SOP 与 10 项完工自查清单；正文不含任何客户名称与联系方式，具体配置以部署目录 targets.yaml 与 mail.json 为准。 |
