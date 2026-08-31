@@ -62,6 +62,36 @@
 56. [AI优先｜不要让AI替你做最终判断：把执行交给AI，把责任留给人](docs/human-final-judgment-ABL-20260831-V1.md)
 57. [AI优先｜以后我不再只学习怎么用AI，而要学习怎么管理AI](docs/from-using-ai-to-managing-ai-ABL-20260831-V1.md)
 58. [AI优先｜最终篇：真正的AI能力，不是会用AI，而是建立自己的AI工作方式](docs/ai-work-method-finale-ABL-20260831-V1.md)
+59. [AI入门01｜我们今天说的AI，到底是什么？](docs/ai-basics-01-what-is-ai-ABL-20260831-V1.md)
+60. [AI入门02｜ChatGPT不是AI，大模型也不等于ChatGPT](docs/ai-basics-02-chatgpt-vs-llm-ABL-20260831-V1.md)
+61. [AI入门03｜大模型到底是怎么“学会”说话的？](docs/ai-basics-03-how-llm-learns-to-speak-ABL-20260831-V1.md)
+62. [AI入门04｜AI是真的理解你，还是只是在预测下一个字？](docs/ai-basics-04-next-token-prediction-ABL-20260831-V1.md)
+63. [AI入门05｜为什么AI会一本正经地胡说八道？](docs/ai-basics-05-why-ai-hallucinates-ABL-20260831-V1.md)
+64. [AI入门06｜一个大模型，到底是怎么训练出来的？](docs/ai-basics-06-how-llm-is-trained-ABL-20260831-V1.md)
+65. [AI入门07｜Token是什么？为什么它会影响AI能记住多少内容？](docs/ai-basics-07-token-and-memory-limit-ABL-20260831-V1.md)
+66. [AI入门08｜什么是上下文？为什么它可能比提示词更重要](docs/ai-basics-08-context-ABL-20260831-V1.md)
+67. [AI入门09｜提示词到底是什么？其实没有那么神秘](docs/ai-basics-09-prompt-ABL-20260831-V1.md)
+68. [AI入门10｜怎样给AI一个规范、完整的工作任务？](docs/ai-basics-10-well-defined-task-ABL-20260831-V1.md)
+69. [AI入门11｜为什么有的AI回答很快，有的却要“想很久”？](docs/ai-basics-11-reasoning-and-speed-ABL-20260831-V1.md)
+70. [AI入门12｜什么是多模态AI？为什么它不只会读文字了](docs/ai-basics-12-multimodal-ai-ABL-20260831-V1.md)
+71. [AI入门13｜什么是AI智能体Agent？它和普通聊天AI有什么区别？](docs/ai-basics-13-what-is-agent-ABL-20260831-V1.md)
+72. [AI入门14｜大模型和Agent到底是什么关系？](docs/ai-basics-14-llm-and-agent-ABL-20260831-V1.md)
+73. [AI入门15｜Harness是什么？为什么同一个模型放在不同Agent里，效果会差很多？](docs/ai-basics-15-harness-ABL-20260831-V1.md)
+74. [AI入门16｜Agent到底能做什么？从聊天到真正执行任务](docs/ai-basics-16-what-agent-can-do-ABL-20260831-V1.md)
+75. [AI入门17｜什么是工具调用？为什么AI现在可以自己搜索、读文件、查数据库？](docs/ai-basics-17-tool-calling-ABL-20260831-V1.md)
+76. [AI入门18｜MCP是什么？为什么有些Agent把它叫“连接器”？](docs/ai-basics-18-mcp-ABL-20260831-V1.md)
+77. [AI入门19｜什么是AI知识库？把一堆文件丢进去并不等于知识库](docs/ai-basics-19-ai-knowledge-base-ABL-20260831-V1.md)
+78. [AI入门20｜知识库、搜索、上下文和记忆，到底有什么区别？](docs/ai-basics-20-kb-search-context-memory-ABL-20260831-V1.md)
+79. [AI入门21｜什么是Subagent？它和多个Agent有什么区别？](docs/ai-basics-21-subagent-ABL-20260831-V1.md)
+80. [AI入门22｜什么是Multi-Agent？为什么要让多个Agent一起工作？](docs/ai-basics-22-multi-agent-ABL-20260831-V1.md)
+81. [AI入门23｜Skill是什么？它和Prompt、Agent有什么区别？](docs/ai-basics-23-skill-ABL-20260831-V1.md)
+82. [AI入门24｜什么是AI记忆？它和聊天记录、上下文、知识库有什么区别？](docs/ai-basics-24-ai-memory-ABL-20260831-V1.md)
+83. [AI入门25｜Embedding是什么？为什么AI能找到“意思相近”的内容？](docs/ai-basics-25-embedding-ABL-20260831-V1.md)
+84. [AI入门26｜RAG是什么？为什么AI回答前要先找资料？](docs/ai-basics-26-rag-ABL-20260831-V1.md)
+85. [AI入门27｜Fine-tuning微调是什么？它和RAG、知识库有什么区别？](docs/ai-basics-27-fine-tuning-ABL-20260831-V1.md)
+86. [AI入门28｜API是什么？为什么同一个大模型可以出现在很多产品里？](docs/ai-basics-28-api-ABL-20260831-V1.md)
+87. [AI入门29｜开源模型、本地模型和云端模型有什么区别？](docs/ai-basics-29-open-local-cloud-models-ABL-20260831-V1.md)
+88. [AI入门30｜最终篇：从大模型到Agent，把今天的AI世界重新拼起来](docs/ai-basics-30-finale-ABL-20260831-V1.md)
 
 ## 附加版本
 
@@ -71,6 +101,7 @@
 
 | 日期 | 文件 | 更新内容 |
 | --- | --- | --- |
+| 2026-08-31 | “AI入门”系列全部30篇（见教程目录） | 新增面向非技术读者的AI通识系列《AI入门：从大模型到智能体》全30篇：从AI与大模型、ChatGPT之辨、训练原理、下一字预测、幻觉成因，到Token与上下文窗口、上下文、提示词、规范任务下达、推理与响应速度、多模态；再到Agent、大模型与Agent关系、Harness、Agent能力边界、工具调用、MCP、知识库、知识库/搜索/上下文/记忆四概念辨析、Subagent、Multi-Agent、Skill、AI记忆、Embedding、RAG、Fine-tuning微调、API、开源/本地/云端模型；最终篇把整个AI世界从大模型到Agent重新拼成一张图。系列已在网站以独立系列目录呈现。 |
 | 2026-08-31 | [AI优先｜开篇：建立自己的AI工作系统](docs/ai-priority-series-intro-ABL-20260831-V1.md) | 新增《AI优先：建立自己的AI工作系统》系列开篇（不占01—25序号）：交代全系列主旨——重要的不是知道多少AI工具而是有没有一套适合自己的AI工作系统；列明系列讨论的八个实际问题（判断能否交给AI/完整任务交付Agent/长期记忆/多Agent与Subagent之辨/重复任务Skill化/接MCP文件知识库外部工具/一次性任务进化为脚本定时自动化/权限验收复核人工判断边界）；重申系列起点“不是AI万能，而是AI优先”及五问（能否完成/先完成80%/做成Skill/脚本化自动化/人留判断决策责任）；概括AI对工作默认顺序的四个改变（人先做→AI先做、每次重新开始→持续积累、单次对话→长期系统、亲自执行→设计任务调度Agent验收结果）；说明系列共25篇的展开路径与“不追求复杂、不技术炫技”的定位；压缩成一句话：不要只学会使用AI，要慢慢建立一套属于自己的、可以长期积累、持续升级、随工具迁移的AI工作系统。 |
 | 2026-08-31 | [AI优先｜先定义输出，再让AI开始工作](docs/define-output-before-work-ABL-20260831-V1.md) | 新增"AI优先"系列第21篇（补齐此前预留序号）：先别急着告诉AI怎么做，先把最终交付什么想清楚——同一个"研究法律问题"可能对应微信回复/法律备忘录/Excel案例表/Word法律意见/简明结论五种产物，先定义输出往往比先设计过程更重要；输出决定AI处理材料的方式（50案例若要可持续案例库须一开始按公司/板块/问题类型等七字段结构化，否则写完再转Excel等于返工）；不要让AI输出后再人工搬运"最后一公里"（直接指定文件类型/结构/保存位置/命名规则，附Word备忘录＋Excel清单的可复制任务语）；不同输出对应不同工作深度（内部快速判断一条 vs 正式交付成果需核验/事实梳理/风险分级/方案比较/文书格式/复核提示六项）；研究型任务先设计表格字段再搜资料（IPO问询九字段清单，"先建表，再找数据"）；先定义最终文件还能减少上下文混乱（围绕交付物组织信息、无关舍弃）；高频工作的输出模板直接成为AI工作骨架（法律备忘录六段/合同审查三件套/尽调三清单）；输出越明确Subagent和工具越容易分工（按报告章节或公司批次拆分，带来源案例表自然要求保存出处）；完整任务应从交付物倒推六问——先问"最后我希望在电脑里看到什么"，先定义输出再设计过程，最终目的是交付真正可以继续使用的工作成果。 |
 | 2026-08-31 | “AI优先”系列全部24篇（见教程目录） | 全系列标题统一为“AI优先｜序号”格式（01—25，序号21《先定义输出，再让AI开始工作》预留待补）；其中第05篇标题由《搭建自己的AI工作系统》改为《把零散的AI工具，组织成一套工作系统》；仅改文章标题与目录显示，正文与文件名、链接均未改动。 |
